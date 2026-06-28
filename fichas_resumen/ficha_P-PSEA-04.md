@@ -1,0 +1,115 @@
+# Ficha Resumen: P-PSEA-04
+
+## Identificacion
+
+| Campo | Valor |
+|---|---|
+| **Codigo** | `P-PSEA-04` |
+| **Nombre decidido** | Planificacion de ronda EA |
+| **Tipo documental** | Procedimiento |
+| **Estado** | Actualizar |
+| **Prioridad** | Alta |
+| **Clase de ficha** | Ficha activa |
+
+---
+
+## Proposito y rol
+
+### Proposito operativo
+
+Gobierna la planificacion de una ronda de ensayo de aptitud, incluyendo definicion de alcance, seleccion de participantes, calendario, cronograma, item de ensayo, niveles de concentracion, hoja de registro del participante, competencia/autorizacion y proveedores criticos cuando aplique. La planificacion se soporta en `calaire-app` y en formatos exportables.
+
+### Rol en el flujo
+
+- [x] Criterio tecnico
+- [x] Procedimiento
+- [ ] Entrada
+- [ ] Salida
+- [ ] Registro oficial
+- [ ] Evidencia
+- [ ] Instructivo
+- [ ] Matriz
+- [ ] Soporte documental
+
+---
+
+## Aplicativos y tecnologia
+
+#### Aplicativo asociado
+
+- [x] `calaire-app`
+- [ ] `pt_app`
+- [ ] Ambos
+- [ ] Ninguno
+
+La planificacion se ejecuta principalmente en `calaire-app`.
+
+---
+
+## Flujo de datos
+
+#### Entradas principales
+
+| Codigo / fuente | Descripcion | Rol en el flujo |
+|---|---|---|
+| `F-PSEA-01` | Calendario global de ronda | Insumo |
+| `F-PSEA-02` | Cronograma detallado de ronda | Insumo |
+| `F-PSEA-04` | Anexo tecnico de equipos e instrumentos | Insumo |
+| `F-PSEA-05` | Plan de ronda EA | Producto |
+| `F-PSEA-05A` | Hoja de registro del participante | Insumo / Producto |
+| `F-PSEA-06` | Ficha digital de ronda | Insumo / Producto |
+| `F-PSEA-16` | Matriz de competencia y autorizacion | Referencia / evidencia de planificacion |
+| `F-PSEA-17` | Evaluacion de proveedores criticos | Referencia / evidencia de planificacion |
+| `F-PSEA-07` | Preparacion y control del item | Referencia |
+| ISO/IEC 17043:2023 7.2.1.3 | Nota/matriz A-U | Referencia externa |
+
+#### Salidas principales
+
+| Codigo / destino | Descripcion | Rol en el flujo |
+|---|---|---|
+| `F-PSEA-05` | Plan de ronda consolidado | Producto |
+| `F-PSEA-05A` | Hoja de registro del participante diligenciada, si aplica | Registro |
+| `F-PSEA-06` | Ficha digital de ronda | Producto |
+| `P-PSEA-06` | Preparacion y control del item | Referencia |
+
+---
+
+## Relaciones documentales
+
+#### Documentos relacionados
+
+| Codigo | Relacion | Tipo de vinculo |
+|---|---|---|
+| `DG-PSEA-02` | Aplicativo que soporta la planificacion | Obligatorio |
+| `I-PSEA-03` | Instructivo de administracion de rondas | Obligatorio |
+| `P-PSEA-06` | Preparacion del item que debe planificarse | Obligatorio |
+| `F-PSEA-05` | Plan de ronda que este procedimiento produce | Obligatorio |
+| `F-PSEA-05A` | Hoja de registro del participante asociada al plan | Obligatorio cuando aplique |
+| `F-PSEA-06` | Ficha digital que este procedimiento produce | Obligatorio |
+| `F-PSEA-16` | Competencia y autorizacion requerida para ejecutar la ronda | Condicional |
+| `F-PSEA-17` | Proveedores criticos requeridos para ejecutar la ronda | Condicional |
+| `P-PSEA-14` | Colusion y falsificacion (medidas preventivas en plan) | Referencia |
+
+---
+
+## Limites y riesgos
+
+#### Limites de alcance
+
+- No es un instructivo de uso de `calaire-app` (eso es `I-PSEA-03`).
+- No define criterios estadisticos (eso es `P-PSEA-07`).
+- No es un procedimiento de preparacion del item (eso es `P-PSEA-06`).
+- No incluye comunicaciones a participantes (eso es `P-PSEA-05`).
+
+#### Riesgos de interpretacion
+
+- **Confundir con F-PSEA-05:** `F-PSEA-05` es el plan de ronda como formato/registro; `P-PSEA-04` es el procedimiento que gobierna como planificar.
+- **Omitir nota A-U:** La planificacion debe incluir o referenciar la nota/matriz A-U de ISO/IEC 17043:2023 7.2.1.3.
+- **Describir funciones de calaire-app:** Las funciones del aplicativo se documentan en `DG-PSEA-02` e `I-PSEA-03`; este procedimiento gobierna la actividad de planificacion.
+- **Incluir analisis estadistico:** El analisis ocurre despues de la planificacion y ejecucion, bajo `P-PSEA-07` y `P-PSEA-09`.
+
+---
+
+## Criterio minimo de elaboracion
+
+El procedimiento define los pasos de planificacion, alcance, participantes, calendario, item, niveles, hoja de registro del participante, competencia y proveedores cuando aplique, citando `calaire-app` como soporte y `F-PSEA-05` como producto, sin duplicar instructivos ni criterios estadisticos.
