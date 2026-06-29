@@ -21,10 +21,10 @@ flowchart LR
   P04 --> I03["I-PSEA-03\nAdministracion rondas"]
   P04 --> F01["F-PSEA-01\nCalendario"]
   P04 --> F02["F-PSEA-02\nCronograma"]
-  P04 --> F04["F-PSEA-04\nEquipos instrumentos"]
-  P04 --> F05["F-PSEA-05\nPlan de ronda"]
-  P04 --> F05A["F-PSEA-05A\nHoja registro participante"]
-  P04 --> F06["F-PSEA-06\nFicha digital"]
+  P04 --> F03["F-PSEA-03\nRegistro participante"]
+  F03 --> F04["F-PSEA-04\nEquipos instrumentos"]
+  P04 --> F05["F-PSEA-05\nFicha basica"]
+  P04 --> F06["F-PSEA-06\nPlanificacion ronda"]
   P04 --> F16["F-PSEA-16\nCompetencia autorizacion"]
   P04 --> F17["F-PSEA-17\nProveedores criticos"]
   F05 --> F05A
@@ -146,7 +146,7 @@ Cada ronda se materializa bajo `02_despliegue_rondas/<codigo_ronda>/`. La raiz d
 
 | Grupo | Codigos | Funcion |
 |---|---|---|
-| Planificacion | `F-PSEA-01`, `F-PSEA-02`, `F-PSEA-04`, `F-PSEA-05`, `F-PSEA-05A`, `F-PSEA-06`, `F-PSEA-16`, `F-PSEA-17` | Calendario, cronograma, anexo tecnico, plan, hoja participante, ficha digital, competencia y proveedores cuando aplique. |
+| Planificacion | `F-PSEA-01`, `F-PSEA-02`, `F-PSEA-03`, `F-PSEA-04`, `F-PSEA-05`, `F-PSEA-06`, `F-PSEA-16`, `F-PSEA-17` | Calendario, cronograma, registro participante, equipos, ficha basica, planificacion completa, competencia y proveedores cuando aplique. |
 | Datos y aplicativos | `F-PSEA-04`, `F-PSEA-08`, `F-PSEA-09`, `F-PSEA-10`, `F-PSEA-12` | Equipos, datos reportados, exportacion PT, preprocesamiento y dataset oficial. |
 | Item y H/E | `F-PSEA-07`, `F-PSEA-11`, `F-PSEA-11A` a `F-PSEA-11D` | Control del item, homogeneidad y estabilidad. |
 | Informe | `F-PSEA-13` | Informe final de resultados. |
@@ -159,6 +159,6 @@ Cada ronda se materializa bajo `02_despliegue_rondas/<codigo_ronda>/`. La raiz d
 |---|---|
 | Flujo oficial de datos | `P-PSEA-08` -> `DG-PSEA-02` -> `I-PSEA-02` -> `F-PSEA-08` -> `F-PSEA-09` -> `DG-PSEA-03` -> `I-PSEA-04` -> `F-PSEA-10` -> `F-PSEA-12` -> `I-PSEA-05` -> `F-PSEA-13` |
 | Homogeneidad y estabilidad | `P-PSEA-06` -> `F-PSEA-07` -> `P-PSEA-07` -> `F-PSEA-11` / `F-PSEA-11A` a `F-PSEA-11D` -> `I-PSEA-05` -> `F-PSEA-13` |
-| Planificacion de ronda | `P-PSEA-04` -> `P-PSEA-05` -> `DG-PSEA-02` -> `I-PSEA-03` -> `F-PSEA-06` -> `F-PSEA-01` -> `F-PSEA-02` -> `F-PSEA-04` -> `F-PSEA-05` -> `F-PSEA-05A` -> `F-PSEA-16` -> `F-PSEA-17` -> `F-PSEA-18` -> `P-PSEA-06` |
-| Estructura de ronda | `P-PSEA-03` -> `P-PSEA-05` -> `F-PSEA-01` -> `F-PSEA-02` -> `F-PSEA-04` -> `F-PSEA-05` -> `F-PSEA-05A` -> `F-PSEA-06` -> `F-PSEA-16` -> `F-PSEA-17` -> `F-PSEA-18` -> `F-PSEA-07` -> `F-PSEA-08` -> `F-PSEA-09` -> `F-PSEA-10` -> `F-PSEA-12` -> `F-PSEA-11` -> `F-PSEA-11A` a `F-PSEA-11D` -> `F-PSEA-13` -> `F-PSEA-14` -> `F-PSEA-15` |
+| Planificacion de ronda | `P-PSEA-04` -> `P-PSEA-05` -> `DG-PSEA-02` -> `I-PSEA-03` -> `F-PSEA-03` -> `F-PSEA-04` -> `F-PSEA-06` -> `F-PSEA-05` -> `F-PSEA-01` -> `F-PSEA-02` -> `F-PSEA-16` -> `F-PSEA-17` -> `F-PSEA-18` -> `P-PSEA-06` |
+| Estructura de ronda | `P-PSEA-03` -> `P-PSEA-05` -> `F-PSEA-01` -> `F-PSEA-02` -> `F-PSEA-03` -> `F-PSEA-04` -> `F-PSEA-05` -> `F-PSEA-06` -> `F-PSEA-16` -> `F-PSEA-17` -> `F-PSEA-18` -> `F-PSEA-07` -> `F-PSEA-08` -> `F-PSEA-09` -> `F-PSEA-10` -> `F-PSEA-12` -> `F-PSEA-11` -> `F-PSEA-11A` a `F-PSEA-11D` -> `F-PSEA-13` -> `F-PSEA-14` -> `F-PSEA-15` |
 | Cierre y gestion SGC | `P-PSEA-03` -> `P-PSEA-14` / `P-PSEA-15` / `P-PSEA-17` / `P-PSEA-18` / `P-PSEA-20` / `P-PSEA-21` -> `F-PSEA-14` / `F-PSEA-15` / `F-PSEA-16` / `F-PSEA-17` |

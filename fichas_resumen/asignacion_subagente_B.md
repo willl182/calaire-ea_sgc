@@ -51,7 +51,7 @@ Documentar los elementos que habilitan el flujo digital y los formatos nuevos o 
 
 ### Formatos criticos
 
-#### `F-PSEA-06` — Ficha digital de ronda EA
+#### `F-PSEA-06` — Planificacion de ronda EA
 - **Tipo:** Formato / Exportacion
 - **Clase:** Ficha activa
 - **Prioridad:** Alta

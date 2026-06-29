@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>F-PSEA-03 - Registro de participacion</title>
+  <title>F-PSEA-03 - Registro de participacion y carga de datos del
+participante</title>
   <link rel="stylesheet" href="ficha_resumen.css">
   <script defer src="ficha_names.js"></script>
 </head>
@@ -12,7 +13,8 @@
     <header class="hero">
       <div class="eyebrow">CALAIRE-EA · Ficha resumen SGC PEA</div>
       <h1>F-PSEA-03</h1>
-            <p class="hero-name">Registro de participacion</p>
+            <p class="hero-name">Registro de participacion y carga de
+datos del participante</p>
             <div class="hero-meta" aria-label="Metadatos de la ficha">
                 <span><strong>Tipo</strong>Registro</span>
                         <span><strong>Estado</strong>Mantener /
@@ -75,7 +77,8 @@ Actualizar</span>
         </tr>
         <tr>
         <td><strong>Nombre decidido</strong></td>
-        <td>Registro de participacion</td>
+        <td>Registro de participacion y carga de datos del
+        participante</td>
         </tr>
         <tr>
         <td><strong>Tipo documental</strong></td>
@@ -98,11 +101,12 @@ Actualizar</span>
         <hr />
         <h2 id="proposito-y-rol">Proposito y rol</h2>
         <h3 id="proposito-operativo">Proposito operativo</h3>
-        <p>Registro principal de participacion de laboratorios en una
-        ronda de ensayo de aptitud. Documenta la inscripcion,
-        confirmacion, datos de contacto, estado de participacion y
-        resultado final de cada laboratorio. Se genera desde
-        <code>calaire-app</code>.</p>
+        <p>Registro principal donde el participante carga o actualiza en
+        <code>calaire-app</code> sus datos de participacion: contacto,
+        personal autorizado, analitos, equipos, condiciones logisticas y
+        aceptacion de condiciones. Es la fuente primaria para el
+        seguimiento de participacion y para exportar equipos como
+        <code>F-PSEA-04</code>.</p>
         <h3 id="rol-en-el-flujo">Rol en el flujo</h3>
         <ul class="task-list">
         <li><label><input type="checkbox" checked="" />Registro
@@ -166,9 +170,14 @@ Actualizar</span>
         </thead>
         <tbody>
         <tr>
-        <td><code>F-PSEA-05</code></td>
-        <td>Plan de ronda EA</td>
-        <td>Referencia</td>
+        <td><code>F-PSEA-04</code></td>
+        <td>Equipos e instrumentos exportados desde el registro</td>
+        <td>Salida</td>
+        </tr>
+        <tr>
+        <td><code>F-PSEA-06</code></td>
+        <td>Planificacion completa de ronda</td>
+        <td>Insumo</td>
         </tr>
         <tr>
         <td><code>F-PSEA-09</code></td>
@@ -205,8 +214,9 @@ Actualizar</span>
         <td>Obligatorio</td>
         </tr>
         <tr>
-        <td><code>F-PSEA-09</code></td>
-        <td>Datos exportados derivados de la participacion</td>
+        <td><code>F-PSEA-06</code></td>
+        <td>Planificacion completa alimentada por la carga del
+        participante</td>
         <td>Obligatorio</td>
         </tr>
         <tr>
@@ -225,8 +235,12 @@ Actualizar</span>
         <h2 id="limites-y-riesgos">Limites y riesgos</h2>
         <h4 id="limites-de-alcance">Limites de alcance</h4>
         <ul>
-        <li>No es el anexo tecnico de equipos (eso es
+        <li>No es el anexo tecnico de equipos exportado (eso es
         <code>F-PSEA-04</code>).</li>
+        <li>No es la ficha basica de ronda (eso es
+        <code>F-PSEA-05</code>).</li>
+        <li>No es la planificacion completa de ronda (eso es
+        <code>F-PSEA-06</code>).</li>
         <li>No contiene datos reportados (eso es
         <code>F-PSEA-08</code>).</li>
         <li>No es el informe final (eso es <code>F-PSEA-13</code>).</li>
@@ -238,9 +252,9 @@ Actualizar</span>
         <li><strong>Confundir con F-PSEA-04:</strong>
         <code>F-PSEA-03</code> es el registro de participacion;
         <code>F-PSEA-04</code> es el anexo tecnico de equipos.</li>
-        <li><strong>Omitir trazabilidad:</strong> Debe vincularse con
-        los datos exportados (<code>F-PSEA-09</code>) y el plan de ronda
-        (<code>F-PSEA-05</code>).</li>
+        <li><strong>Omitir trazabilidad:</strong> Debe vincularse con la
+        exportacion de equipos (<code>F-PSEA-04</code>) y la
+        planificacion completa (<code>F-PSEA-06</code>).</li>
         <li><strong>Incluir resultados de aptitud:</strong> Los
         resultados de aptitud se reportan en el informe
         (<code>F-PSEA-13</code>), no en el registro de
@@ -249,11 +263,11 @@ Actualizar</span>
         <hr />
         <h2 id="criterio-minimo-de-elaboracion">Criterio minimo de
         elaboracion</h2>
-        <p>El registro de participacion contiene inscripcion,
-        confirmacion, datos de contacto, estado y resultado final de
-        cada laboratorio, generado desde <code>calaire-app</code>,
-        vinculado con <code>F-PSEA-04</code> y
-        <code>F-PSEA-09</code>.</p>
+        <p>El registro de participacion contiene la carga de datos del
+        participante en <code>calaire-app</code>, permite cerrar su
+        estado de participacion y exporta equipos hacia
+        <code>F-PSEA-04</code> para alimentar la planificacion
+        <code>F-PSEA-06</code>.</p>
       </article>
     </main>
     <footer class="footer">

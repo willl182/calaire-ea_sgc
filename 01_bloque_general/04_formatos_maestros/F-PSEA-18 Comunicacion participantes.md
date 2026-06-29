@@ -165,7 +165,7 @@ El calendario y el cronograma detallado de actividades se adjuntan a este correo
 
 Para gestionar el permiso de ingreso al campus (Bloque 19A, Universidad Nacional de Colombia, Sede Medellin) necesitamos sus datos con anticipacion. Sin este tramite no podra ingresar con sus equipos el dia de la ronda.
 
-Por favor diligenciar y devolver el F-PSEA-05A - Hoja de Registro del Participante antes del [fecha limite], incluyendo:
+Por favor diligenciar o actualizar en `calaire-app` el F-PSEA-03 - Registro de participacion antes del [fecha limite], incluyendo:
 
 - Datos personales y de acompanantes requeridos para el permiso de ingreso.
 - Analizadores y equipos que traera, incluyendo marca, modelo y serial.
@@ -175,7 +175,7 @@ Documentos adjuntos:
 
 | Codigo | Documento |
 |---|---|
-| F-PSEA-05A | Hoja de Registro del Participante |
+| F-PSEA-03 | Registro de participacion y carga de datos del participante |
 | F-PSEA-01 | Calendario actualizado de la prueba piloto |
 | F-PSEA-02 | Cronograma detallado de actividades |
 
@@ -199,8 +199,9 @@ Cualquier duda, no dude en contactarnos.
 | Codigo | Relacion | Tipo de vinculo |
 |---|---|---|
 | `P-PSEA-05` | Procedimiento de comunicaciones del PEA. | Obligatorio |
-| `F-PSEA-05` | Plan de ronda EA que define participantes, alcance, fechas y condiciones. | Obligatorio |
-| `F-PSEA-05A` | Hoja de registro del participante que puede solicitarse mediante esta comunicacion. | Obligatorio cuando aplique |
+| `F-PSEA-05` | Ficha basica de ronda EA que resume identificacion, alcance, fechas y registros asociados. | Referencia |
+| `F-PSEA-03` | Registro de participacion que puede solicitarse mediante esta comunicacion. | Obligatorio cuando aplique |
+| `F-PSEA-06` | Planificacion completa de ronda que define condiciones operativas. | Obligatorio |
 | `F-PSEA-01` | Calendario de la ronda o prueba piloto. | Referencia |
 | `F-PSEA-02` | Cronograma detallado de actividades. | Referencia |
 | `F-PSEA-08` | Datos reportados por participante, cuando la comunicacion solicite o aclare reporte de datos. | Referencia |

@@ -1,32 +1,29 @@
 # Session State: CALAIRE-EA SGC
 
-**Last Updated**: 2026-06-27 11:59 -05
+**Last Updated**: 2026-06-29 08:53 America/Bogota
 
 ## Session Objective
 
-Cerrar y persistir el trabajo de normalizacion documental del SGC PEA, especialmente la aplicacion de plantillas institucionales y la reorganizacion documental asociada.
+Alinear los formatos F-PSEA-03 a F-PSEA-06 segun la decision del usuario: F-PSEA-03 es la carga de datos del participante en calaire-app, F-PSEA-04 es equipos exportados desde F-PSEA-03, F-PSEA-05 es ficha basica de ronda, F-PSEA-06 es planificacion completa y F-PSEA-05A desaparece de activos.
 
 ## Current State
 
-- [x] Se aplicaron plantillas a documentos controlados del SGC mediante Pandoc con `--reference-doc` para DOCX y plantilla Excel para XLSX.
-- [x] Se corrigio el enfoque despues de una objecion del usuario: el intento inicial de reconstruccion automatica fue revertido y luego reaplicado como metodo aceptado.
-- [x] Se hicieron dos commits separados y ambos fueron empujados a `origin/main`.
-- [x] Commit `f5a937f`: `Aplicar plantillas a documentos controlados SGC`.
-- [x] Commit `818ae00`: `Actualizar estructura documental SGC restante`.
-- [x] El arbol de trabajo quedo limpio al finalizar.
+- [x] Creado `F-PSEA-03 Registro de participacion` como formato maestro MD/DOCX.
+- [x] Renombrado y reescrito `F-PSEA-05` como `Ficha basica de ronda EA`.
+- [x] Renombrado y reescrito `F-PSEA-06` como `Planificacion de ronda EA`.
+- [x] Retirado `F-PSEA-05A` de formatos maestros, mapa, inventarios, checklist y fichas activas.
+- [x] Actualizados mapa, inventario documental, diccionario, arbol maestro, matriz documental, control de registros, instructivos I-PSEA-02/I-PSEA-03 y documentos marco DG-PSEA-02/DG-PSEA-03.
+- [x] Renombrados archivos de planificacion en rondas EA-PP-2026-R1/R2/R3 para F-PSEA-05 y F-PSEA-06.
+- [x] Regenerados HTML de fichas y DOCX/HTML derivados principales con Pandoc.
 
 ## Critical Technical Context
 
-- El repositorio Git raiz es `/home/w182/w421/calaire-ea`.
-- El grafo/documentacion SGC activo esta en `/home/w182/w421/calaire-ea/docs/documentacion_sgc`.
-- La rama activa es `main` y esta sincronizada con `origin/main`.
-- Para aplicar plantillas en DOCX se uso Pandoc con `--reference-doc`; para las plantillas `.doc` de procedimientos e instructivos se convirtieron copias temporales a `.docx` mediante LibreOffice.
-- Para XLSX se partio de `01_bloque_general/00_plantillas_base/F-PSEA-01 Plantilla Formato_Excel.xlsx` y se incorporo una hoja `Datos` con filas provenientes de los CSV fuente.
-- El usuario acepto el metodo Pandoc despues de la aclaracion, pero el aprendizaje importante es no presentar una conversion automatica como equivalente perfecto a copiar/pegar manual en Word.
-- Respaldo temporal de la reaplicacion: `/tmp/calaire_sgc_template_backup_reapply_20260624_113010/`.
+- `F-PSEA-05A` solo debe aparecer en `fichas_resumen/retirados/`, `para_quitar/` o menciones explicitas de retiro/exclusion.
+- Flujo documental vigente: `F-PSEA-03 -> F-PSEA-04 -> F-PSEA-06 -> F-PSEA-05`.
+- El mapa fue validado con Node: 56 nodos y 50 IDs referenciados sin nodos faltantes.
+- Hay cambios previos del usuario en el arbol de trabajo, especialmente reubicacion de DG-PSEA-02/DG-PSEA-03 a carpetas propias y movimiento de material antiguo a `para_quitar/`; no revertirlos.
 
 ## Next Steps
 
-1. Si se revisan los DOCX visualmente en Word/LibreOffice, corregir manualmente los casos donde Pandoc no preserve formato fino.
-2. Si se modifica el mapa o inventario, mantener consistencia con `mapa_navegacion_sgc_pea.html` y los documentos maestros en `01_bloque_general/`.
-3. Si aparece una objecion sobre formato, revisar primero el archivo especifico antes de rehacer masivamente.
+1. Revisar visualmente `mapa_navegacion_sgc_pea.html` si se desea validar layout.
+2. Si se prepara commit, agrupar estos cambios como ajuste documental F-PSEA-03/04/05/06 y retiro de F-PSEA-05A.

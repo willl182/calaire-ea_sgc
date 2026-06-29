@@ -55,7 +55,7 @@ Puede usarse para comunicaciones registradas en `calaire-app` o por correo insti
 | `F-PSEA-05` | Plan de ronda con participantes, alcance, fechas y condiciones vigentes. | Insumo |
 | `F-PSEA-01` | Calendario de ronda o prueba piloto. | Insumo |
 | `F-PSEA-02` | Cronograma detallado de actividades. | Insumo |
-| `F-PSEA-05A` | Hoja de registro del participante, cuando se solicita diligenciamiento. | Adjunto / salida esperada |
+| `F-PSEA-03` | Registro de participacion, cuando se solicita diligenciamiento o actualizacion en `calaire-app`. | Salida esperada |
 
 #### Salidas principales
 
@@ -63,7 +63,7 @@ Puede usarse para comunicaciones registradas en `calaire-app` o por correo insti
 |---|---|---|
 | Evidencia de envio | Correo, registro de aplicativo, acta o documento emitido. | Evidencia |
 | Respuesta del participante | Acuse, datos enviados o formato diligenciado. | Evidencia |
-| `F-PSEA-05A` | Copia diligenciada por participante, cuando aplica. | Registro derivado |
+| `F-PSEA-03` | Registro actualizado por participante, cuando aplica. | Registro derivado |
 | `F-PSEA-14` | Caso de queja o no conformidad, si la comunicacion deriva en caso formal. | Condicional |
 | `F-PSEA-15` | Apelacion, si la comunicacion deriva en apelacion formal. | Condicional |
 
@@ -76,8 +76,9 @@ Puede usarse para comunicaciones registradas en `calaire-app` o por correo insti
 | Codigo | Relacion | Tipo de vinculo |
 |---|---|---|
 | `P-PSEA-05` | Procedimiento de comunicaciones del PEA. | Obligatorio |
-| `F-PSEA-05` | Plan de ronda EA. | Obligatorio |
-| `F-PSEA-05A` | Hoja de registro del participante. | Obligatorio cuando aplique |
+| `F-PSEA-05` | Ficha basica de ronda EA. | Referencia |
+| `F-PSEA-03` | Registro de participacion y carga de datos del participante. | Obligatorio cuando aplique |
+| `F-PSEA-06` | Planificacion de ronda EA. | Obligatorio |
 | `F-PSEA-01` | Calendario de ronda. | Referencia |
 | `F-PSEA-02` | Cronograma detallado. | Referencia |
 | `F-PSEA-08` | Datos reportados por participante, si la comunicacion trata reporte de datos. | Referencia |

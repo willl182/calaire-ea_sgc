@@ -48,16 +48,16 @@ El participante usa calaire-app bajo lo definido en DG-PSEA-02 y P-PSEA-05.
 | Codigo / fuente | Descripcion |
 |---|---|
 | DG-PSEA-02 | Documento general del aplicativo calaire-app. |
-| F-PSEA-03 | Registro de participacion. |
-| F-PSEA-04 | Anexo tecnico de equipos e instrumentos. |
+| F-PSEA-03 | Registro de participacion y carga de datos del participante. |
+| F-PSEA-04 | Equipos e instrumentos exportados desde la carga del participante. |
 | P-PSEA-05 | Procedimiento de comunicaciones del PEA. |
 
 ## 5. Salidas
 
 | Codigo | Descripcion |
 |---|---|
-| F-PSEA-03 | Confirmacion o actualizacion de participacion. |
-| F-PSEA-04 | Informacion tecnica de equipos e instrumentos. |
+| F-PSEA-03 | Confirmacion, actualizacion y carga de datos del participante. |
+| F-PSEA-04 | Exportacion tecnica de equipos e instrumentos. |
 | F-PSEA-08 | Datos reportados por participante. |
 | F-PSEA-09 | Exportacion posterior de datos hacia analisis PT. |
 
@@ -66,7 +66,7 @@ El participante usa calaire-app bajo lo definido en DG-PSEA-02 y P-PSEA-05.
 1. Acceder a calaire-app con las credenciales proporcionadas por el coordinador de ronda.
 2. Confirmar la participacion en la ronda asignada dentro del plazo establecido.
 3. Consultar el calendario, cronograma e instrucciones de la ronda.
-4. Registrar o actualizar la informacion tecnica de equipos e instrumentos (F-PSEA-04).
+4. Registrar o actualizar la informacion de participacion, personal y equipos en F-PSEA-03; la informacion tecnica de equipos se exporta como F-PSEA-04.
 5. Registrar los datos obtenidos durante la ejecucion de la ronda (F-PSEA-08).
 6. Revisar comunicaciones operativas y responder cuando aplique.
 7. Conservar la evidencia de registros y confirmaciones generadas por el aplicativo.
@@ -84,7 +84,7 @@ El participante debe completar como minimo:
 ## 8. Controles
 
 - El registro de datos debe hacerse dentro de los plazos definidos en el cronograma de ronda.
-- La informacion de equipos e instrumentos debe ser coherente con el anexo tecnico (F-PSEA-04).
+- La informacion de equipos e instrumentos cargada en F-PSEA-03 debe ser coherente con el anexo tecnico exportado (F-PSEA-04).
 - Los datos reportados (F-PSEA-08) deben ser revisados por el participante antes de su envio.
 - Cualquier modificacion posterior al cierre de la ronda debe ser comunicada formalmente segun P-PSEA-05.
 
@@ -95,8 +95,8 @@ El participante debe completar como minimo:
 | DG-PSEA-02 | Documento general del aplicativo que se opera. |
 | P-PSEA-05 | Procedimiento de comunicaciones al participante. |
 | P-PSEA-08 | Flujo tecnico que recibe la informacion capturada. |
-| F-PSEA-03 | Registro de participacion. |
-| F-PSEA-04 | Anexo tecnico de equipos e instrumentos. |
+| F-PSEA-03 | Registro de participacion y carga de datos del participante. |
+| F-PSEA-04 | Equipos e instrumentos exportados desde F-PSEA-03. |
 | F-PSEA-08 | Datos reportados por participante. |
 | I-PSEA-03 | Instructivo de administracion de rondas (uso interno). |
 

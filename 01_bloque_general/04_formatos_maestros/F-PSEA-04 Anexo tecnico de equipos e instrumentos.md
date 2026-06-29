@@ -4,19 +4,19 @@
 **Version:** 0  
 **Tipo:** Formato maestro  
 **Fuente base definida:** `ronda_1_equipos.csv`  
-**Aplicacion:** Registro de equipos e instrumentos declarados por laboratorio participante para una ronda de ensayo de aptitud.
+**Aplicacion:** Exportacion desde `F-PSEA-03` / `calaire-app` de los equipos e instrumentos declarados por laboratorio participante para una ronda de ensayo de aptitud.
 
 ---
 
 ## 1. Objetivo
 
-Registrar los equipos, analizadores e instrumentos declarados por cada laboratorio participante para la medicion de gases contaminantes criterio durante una ronda del PEA, manteniendo trazabilidad entre codigo de laboratorio, contaminante y equipo utilizado.
+Registrar, como anexo tecnico exportado desde `calaire-app`, los equipos, analizadores e instrumentos declarados por cada laboratorio participante en `F-PSEA-03`, manteniendo trazabilidad entre ronda, codigo de laboratorio, contaminante y equipo utilizado.
 
 ---
 
 ## 2. Alcance
 
-Este formato aplica a los instrumentos reportados por los participantes y al equipo de referencia cuando corresponda. La informacion registrada sirve como insumo tecnico para `calaire-app`, para la validacion de datos reportados y para la preparacion de archivos usados por `pt_app`.
+Este formato aplica a los instrumentos reportados por los participantes en `F-PSEA-03` y al equipo de referencia cuando corresponda. La informacion registrada se exporta desde `calaire-app`, sirve para validar datos reportados y prepara archivos usados por `pt_app`.
 
 ---
 
@@ -68,7 +68,8 @@ Ejemplo de fuente:
 
 | Documento | Relacion |
 |---|---|
-| `F-PSEA-05A` | Identifica participante y datos de registro. |
+| `F-PSEA-03` | Registro de participacion desde el cual se exportan los equipos. |
+| `F-PSEA-06` | Planificacion completa que usa la informacion tecnica de equipos. |
 | `F-PSEA-08` | Usa la informacion de instrumento para validar datos reportados. |
 | `F-PSEA-09` | Exporta datos hacia `pt_app` con identificacion de instrumento. |
 | `DG-PSEA-02` | Control funcional en `calaire-app`. |

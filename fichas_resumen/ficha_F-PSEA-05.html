@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>F-PSEA-05 - Plan de ronda EA</title>
+  <title>F-PSEA-05 - Ficha basica de ronda EA</title>
   <link rel="stylesheet" href="ficha_resumen.css">
   <script defer src="ficha_names.js"></script>
 </head>
@@ -12,12 +12,12 @@
     <header class="hero">
       <div class="eyebrow">CALAIRE-EA · Ficha resumen SGC PEA</div>
       <h1>F-PSEA-05</h1>
-            <p class="hero-name">Plan de ronda EA</p>
+            <p class="hero-name">Ficha basica de ronda EA</p>
             <div class="hero-meta" aria-label="Metadatos de la ficha">
                 <span><strong>Tipo</strong>Formato</span>
                         <span><strong>Estado</strong>Mantener /
 Actualizar</span>
-                        <span><strong>Prioridad</strong>Media-alta</span>
+                        <span><strong>Prioridad</strong>Media</span>
                         <span><strong>Clase</strong>Ficha activa</span>
               </div>
       <div class="hero-actions">
@@ -75,7 +75,7 @@ Actualizar</span>
         </tr>
         <tr>
         <td><strong>Nombre decidido</strong></td>
-        <td>Plan de ronda EA</td>
+        <td>Ficha basica de ronda EA</td>
         </tr>
         <tr>
         <td><strong>Tipo documental</strong></td>
@@ -87,7 +87,7 @@ Actualizar</span>
         </tr>
         <tr>
         <td><strong>Prioridad</strong></td>
-        <td>Media-alta</td>
+        <td>Media</td>
         </tr>
         <tr>
         <td><strong>Clase de ficha</strong></td>
@@ -98,13 +98,10 @@ Actualizar</span>
         <hr />
         <h2 id="proposito-y-rol">Proposito y rol</h2>
         <h3 id="proposito-operativo">Proposito operativo</h3>
-        <p>Documento consolidado del plan de una ronda de ensayo de
-        aptitud. Integra el calendario global (<code>F-PSEA-01</code>),
-        el cronograma detallado (<code>F-PSEA-02</code>), la ficha
-        digital de ronda (<code>F-PSEA-06</code>), la hoja de registro
-        del participante (<code>F-PSEA-05A</code>) cuando aplique y la
-        nota/matriz A-U de ISO/IEC 17043:2023 7.2.1.3. Es el documento
-        maestro de planificacion de cada ronda.</p>
+        <p>Ficha breve de identificacion de una ronda. Resume codigo,
+        fechas, alcance tecnico, participantes previstos, aplicativos y
+        registros principales asociados. Sirve como caratula documental
+        y control rapido del expediente.</p>
         <h3 id="rol-en-el-flujo">Rol en el flujo</h3>
         <ul class="task-list">
         <li><label><input type="checkbox" checked="" />Registro
@@ -132,8 +129,8 @@ Actualizar</span>
         <li><label><input type="checkbox" />Ambos</label></li>
         <li><label><input type="checkbox" />Ninguno</label></li>
         </ul>
-        <p>Se genera desde <code>calaire-app</code> integrando multiples
-        formatos.</p>
+        <p>Puede generarse o actualizarse desde <code>calaire-app</code>
+        como resumen de ronda.</p>
         <hr />
         <h2 id="flujo-de-datos">Flujo de datos</h2>
         <h4 id="entradas-principales">Entradas principales</h4>
@@ -147,33 +144,23 @@ Actualizar</span>
         </thead>
         <tbody>
         <tr>
-        <td><code>F-PSEA-01</code></td>
-        <td>Calendario global de ronda</td>
-        <td>Insumo</td>
-        </tr>
-        <tr>
-        <td><code>F-PSEA-02</code></td>
-        <td>Cronograma detallado de ronda</td>
-        <td>Insumo</td>
-        </tr>
-        <tr>
-        <td><code>F-PSEA-05A</code></td>
-        <td>Hoja de registro del participante</td>
-        <td>Insumo / registro derivado</td>
-        </tr>
-        <tr>
         <td><code>F-PSEA-06</code></td>
-        <td>Ficha digital de ronda</td>
+        <td>Planificacion completa de ronda</td>
         <td>Insumo</td>
         </tr>
         <tr>
-        <td><code>F-PSEA-07</code></td>
-        <td>Preparacion y control del item</td>
+        <td><code>F-PSEA-03</code></td>
+        <td>Participantes confirmados</td>
+        <td>Referencia</td>
+        </tr>
+        <tr>
+        <td><code>F-PSEA-04</code></td>
+        <td>Equipos exportados por participante</td>
         <td>Referencia</td>
         </tr>
         <tr>
         <td><code>P-PSEA-04</code></td>
-        <td>Planificacion de ronda</td>
+        <td>Procedimiento de planificacion</td>
         <td>Referencia</td>
         </tr>
         </tbody>
@@ -189,14 +176,14 @@ Actualizar</span>
         </thead>
         <tbody>
         <tr>
-        <td>Participantes</td>
-        <td>Comunicacion del plan de ronda</td>
-        <td>Producto</td>
+        <td>Expediente de ronda</td>
+        <td>Caratula o resumen de control</td>
+        <td>Evidencia</td>
         </tr>
         <tr>
-        <td><code>P-PSEA-14</code></td>
-        <td>Colusion y falsificacion (medidas preventivas)</td>
-        <td>Referencia</td>
+        <td>Participantes / equipo interno</td>
+        <td>Identificacion basica de la ronda</td>
+        <td>Comunicacion</td>
         </tr>
         </tbody>
         </table>
@@ -218,38 +205,33 @@ Actualizar</span>
         <td>Obligatorio</td>
         </tr>
         <tr>
-        <td><code>F-PSEA-01</code></td>
-        <td>Calendario global integrado</td>
-        <td>Obligatorio</td>
+        <td><code>F-PSEA-03</code></td>
+        <td>Registro de participacion cargado en la app</td>
+        <td>Referencia</td>
         </tr>
         <tr>
-        <td><code>F-PSEA-02</code></td>
-        <td>Cronograma detallado integrado</td>
-        <td>Obligatorio</td>
-        </tr>
-        <tr>
-        <td><code>F-PSEA-05A</code></td>
-        <td>Hoja de registro asociada al plan</td>
-        <td>Obligatorio cuando aplique</td>
+        <td><code>F-PSEA-04</code></td>
+        <td>Equipos exportados desde el registro</td>
+        <td>Referencia</td>
         </tr>
         <tr>
         <td><code>F-PSEA-06</code></td>
-        <td>Ficha digital integrada</td>
+        <td>Planificacion completa de ronda</td>
         <td>Obligatorio</td>
         </tr>
         <tr>
-        <td><code>F-PSEA-07</code></td>
-        <td>Preparacion del item referenciada</td>
-        <td>Obligatorio</td>
+        <td><code>F-PSEA-01</code></td>
+        <td>Calendario global referenciado</td>
+        <td>Referencia</td>
         </tr>
         <tr>
-        <td><code>P-PSEA-14</code></td>
-        <td>Colusion y falsificacion (medidas preventivas)</td>
+        <td><code>F-PSEA-02</code></td>
+        <td>Cronograma detallado referenciado</td>
         <td>Referencia</td>
         </tr>
         <tr>
         <td><code>DG-PSEA-02</code></td>
-        <td>Aplicativo que genera el plan</td>
+        <td>Aplicativo que puede generar la ficha</td>
         <td>Obligatorio</td>
         </tr>
         </tbody>
@@ -258,37 +240,35 @@ Actualizar</span>
         <h2 id="limites-y-riesgos">Limites y riesgos</h2>
         <h4 id="limites-de-alcance">Limites de alcance</h4>
         <ul>
-        <li>No es un procedimiento de planificacion (eso es
-        <code>P-PSEA-04</code>); es el formato/registro del plan.</li>
+        <li>No es el registro que diligencia el participante (eso es
+        <code>F-PSEA-03</code>).</li>
+        <li>No es el anexo tecnico de equipos (eso es
+        <code>F-PSEA-04</code>).</li>
+        <li>No es la planificacion completa (eso es
+        <code>F-PSEA-06</code>).</li>
         <li>No contiene datos reportados por participantes (eso es
         <code>F-PSEA-08</code>).</li>
-        <li>No contiene resultados de aptitud (eso es
-        <code>F-PSEA-13</code>).</li>
-        <li>No es un instructivo de uso.</li>
         </ul>
         <h4 id="riesgos-de-interpretacion">Riesgos de
         interpretacion</h4>
         <ul>
-        <li><strong>Confundir con P-PSEA-04:</strong>
-        <code>P-PSEA-04</code> es el procedimiento de planificacion;
-        <code>F-PSEA-05</code> es el formato/registro del plan.</li>
-        <li><strong>Omitir nota A-U:</strong> Debe integrar o
-        referenciar la nota/matriz A-U de ISO/IEC 17043:2023
-        7.2.1.3.</li>
-        <li><strong>Omitir H/E:</strong> No debe decir que H/E no
-        aplica; H/E se documenta en <code>F-PSEA-11</code>.</li>
-        <li><strong>Incluir datos de analisis:</strong> El plan de ronda
-        no incluye resultados estadisticos.</li>
+        <li><strong>Confundir con F-PSEA-06:</strong>
+        <code>F-PSEA-05</code> es la ficha basica;
+        <code>F-PSEA-06</code> es la planificacion completa.</li>
+        <li><strong>Sobrecargar la ficha:</strong> Debe remitir al plan
+        completo cuando se requiera detalle tecnico, estadistico o
+        logistico.</li>
+        <li><strong>Mantener datos desactualizados:</strong> Debe
+        actualizarse cuando cambie el estado de ronda o sus registros
+        principales.</li>
         </ul>
         <hr />
         <h2 id="criterio-minimo-de-elaboracion">Criterio minimo de
         elaboracion</h2>
-        <p>El plan de ronda integra <code>F-PSEA-01</code>,
-        <code>F-PSEA-02</code>, <code>F-PSEA-05A</code>,
-        <code>F-PSEA-06</code>, referencia a <code>F-PSEA-07</code> y
-        nota A-U, generado desde <code>calaire-app</code>, como
-        documento maestro de planificacion sin incluir datos de
-        participantes ni resultados de analisis.</p>
+        <p>La ficha contiene identificacion de ronda, fechas clave,
+        alcance resumido, participantes/equipos referenciados y enlace a
+        la planificacion completa <code>F-PSEA-06</code>, sin duplicar
+        el contenido operativo detallado.</p>
       </article>
     </main>
     <footer class="footer">

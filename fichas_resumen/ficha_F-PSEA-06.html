@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>F-PSEA-06 - Ficha digital de ronda EA</title>
+  <title>F-PSEA-06 - Planificacion de ronda EA</title>
   <link rel="stylesheet" href="ficha_resumen.css">
   <script defer src="ficha_names.js"></script>
 </head>
@@ -12,10 +12,10 @@
     <header class="hero">
       <div class="eyebrow">CALAIRE-EA · Ficha resumen SGC PEA</div>
       <h1>F-PSEA-06</h1>
-            <p class="hero-name">Ficha digital de ronda EA</p>
+            <p class="hero-name">Planificacion de ronda EA</p>
             <div class="hero-meta" aria-label="Metadatos de la ficha">
                 <span><strong>Tipo</strong>Formato</span>
-                        <span><strong>Estado</strong>Elaborar /
+                        <span><strong>Estado</strong>Mantener /
 Actualizar</span>
                         <span><strong>Prioridad</strong>Alta</span>
                         <span><strong>Clase</strong>Ficha activa</span>
@@ -75,7 +75,7 @@ Actualizar</span>
         </tr>
         <tr>
         <td><strong>Nombre decidido</strong></td>
-        <td>Ficha digital de ronda EA</td>
+        <td>Planificacion de ronda EA</td>
         </tr>
         <tr>
         <td><strong>Tipo documental</strong></td>
@@ -83,7 +83,7 @@ Actualizar</span>
         </tr>
         <tr>
         <td><strong>Estado</strong></td>
-        <td>Elaborar / Actualizar</td>
+        <td>Mantener / Actualizar</td>
         </tr>
         <tr>
         <td><strong>Prioridad</strong></td>
@@ -98,21 +98,20 @@ Actualizar</span>
         <hr />
         <h2 id="proposito-y-rol">Proposito y rol</h2>
         <h3 id="proposito-operativo">Proposito operativo</h3>
-        <p>Registra y exporta desde <code>calaire-app</code> la
-        informacion estructurada de una ronda de ensayo de aptitud,
-        incluyendo identificacion, participantes, cronograma, item de
-        ensayo, niveles de concentracion y puntos A-U requeridos por
-        ISO/IEC 17043:2023 7.2.1.3. Es el insumo principal para el
-        <code>F-PSEA-05</code> (Plan de ronda).</p>
+        <p>Formato completo de planificacion de una ronda de ensayo de
+        aptitud. Consolida alcance tecnico, participantes, equipos
+        exportados desde <code>F-PSEA-03</code> como
+        <code>F-PSEA-04</code>, recursos, cronograma, responsabilidades,
+        criterios estadisticos pre-ronda, matriz A-U y aprobaciones.</p>
         <h3 id="rol-en-el-flujo">Rol en el flujo</h3>
         <ul class="task-list">
-        <li><label><input type="checkbox"
-        checked="" />Salida</label></li>
+        <li><label><input type="checkbox" checked="" />Registro
+        oficial</label></li>
         <li><label><input type="checkbox"
         checked="" />Evidencia</label></li>
+        <li><label><input type="checkbox"
+        checked="" />Salida</label></li>
         <li><label><input type="checkbox" />Entrada</label></li>
-        <li><label><input type="checkbox" />Registro
-        oficial</label></li>
         <li><label><input type="checkbox" />Criterio
         tecnico</label></li>
         <li><label><input type="checkbox" />Instructivo</label></li>
@@ -120,8 +119,8 @@ Actualizar</span>
         <li><label><input type="checkbox" />Soporte
         documental</label></li>
         </ul>
-        <p>Es una salida exportable del aplicativo y evidencia de
-        planificacion.</p>
+        <p>Es el registro completo aprobado antes de ejecutar la
+        ronda.</p>
         <hr />
         <h2 id="aplicativos-y-tecnologia">Aplicativos y tecnologia</h2>
         <h4 id="aplicativo-asociado">Aplicativo asociado</h4>
@@ -133,8 +132,9 @@ Actualizar</span>
         <li><label><input type="checkbox" />Ambos</label></li>
         <li><label><input type="checkbox" />Ninguno</label></li>
         </ul>
-        <p>Se genera, diligencia y exporta desde
-        <code>calaire-app</code>.</p>
+        <p>Se alimenta con informacion de <code>calaire-app</code> y
+        puede conservarse como exportacion o documento controlado de
+        planificacion.</p>
         <hr />
         <h2 id="flujo-de-datos">Flujo de datos</h2>
         <h4 id="entradas-principales">Entradas principales</h4>
@@ -148,23 +148,33 @@ Actualizar</span>
         </thead>
         <tbody>
         <tr>
-        <td><code>calaire-app</code></td>
-        <td>Datos de ronda ingresados en el aplicativo</td>
-        <td>Origen</td>
+        <td><code>F-PSEA-03</code></td>
+        <td>Datos cargados por participantes</td>
+        <td>Insumo</td>
         </tr>
         <tr>
-        <td><code>P-PSEA-04</code></td>
-        <td>Planificacion de ronda</td>
-        <td>Referencia</td>
+        <td><code>F-PSEA-04</code></td>
+        <td>Equipos exportados desde el registro</td>
+        <td>Insumo</td>
         </tr>
         <tr>
         <td><code>F-PSEA-01</code></td>
         <td>Calendario global</td>
-        <td>Referencia</td>
+        <td>Insumo</td>
         </tr>
         <tr>
         <td><code>F-PSEA-02</code></td>
         <td>Cronograma detallado</td>
+        <td>Insumo</td>
+        </tr>
+        <tr>
+        <td><code>P-PSEA-04</code></td>
+        <td>Procedimiento de planificacion</td>
+        <td>Referencia</td>
+        </tr>
+        <tr>
+        <td><code>F-PSEA-07</code></td>
+        <td>Preparacion y control del item</td>
         <td>Referencia</td>
         </tr>
         </tbody>
@@ -181,8 +191,18 @@ Actualizar</span>
         <tbody>
         <tr>
         <td><code>F-PSEA-05</code></td>
-        <td>Plan de ronda EA</td>
-        <td>Entrada principal</td>
+        <td>Ficha basica de ronda</td>
+        <td>Resumen</td>
+        </tr>
+        <tr>
+        <td><code>F-PSEA-08</code> / <code>F-PSEA-09</code></td>
+        <td>Ejecucion y datos oficiales posteriores</td>
+        <td>Referencia operativa</td>
+        </tr>
+        <tr>
+        <td>Participantes</td>
+        <td>Instrucciones y condiciones de ronda</td>
+        <td>Comunicacion</td>
         </tr>
         </tbody>
         </table>
@@ -200,27 +220,37 @@ Actualizar</span>
         <tbody>
         <tr>
         <td><code>P-PSEA-04</code></td>
-        <td>Planificacion que genera la ficha</td>
+        <td>Procedimiento que gobierna la planificacion</td>
+        <td>Obligatorio</td>
+        </tr>
+        <tr>
+        <td><code>F-PSEA-03</code></td>
+        <td>Registro de participacion y carga de datos</td>
+        <td>Obligatorio</td>
+        </tr>
+        <tr>
+        <td><code>F-PSEA-04</code></td>
+        <td>Equipos e instrumentos exportados</td>
         <td>Obligatorio</td>
         </tr>
         <tr>
         <td><code>F-PSEA-05</code></td>
-        <td>Plan de ronda que absorbe esta ficha</td>
+        <td>Ficha basica derivada/resumida</td>
         <td>Obligatorio</td>
         </tr>
         <tr>
-        <td><code>F-PSEA-01</code></td>
-        <td>Calendario referenciado en la ficha</td>
-        <td>Referencia</td>
+        <td><code>F-PSEA-07</code></td>
+        <td>Preparacion del item referenciada</td>
+        <td>Obligatorio</td>
         </tr>
         <tr>
-        <td><code>F-PSEA-02</code></td>
-        <td>Cronograma referenciado en la ficha</td>
+        <td><code>P-PSEA-14</code></td>
+        <td>Medidas preventivas frente a colusion y falsificacion</td>
         <td>Referencia</td>
         </tr>
         <tr>
         <td><code>DG-PSEA-02</code></td>
-        <td>Aplicativo que genera la ficha</td>
+        <td>Aplicativo que alimenta la planificacion</td>
         <td>Obligatorio</td>
         </tr>
         </tbody>
@@ -229,34 +259,38 @@ Actualizar</span>
         <h2 id="limites-y-riesgos">Limites y riesgos</h2>
         <h4 id="limites-de-alcance">Limites de alcance</h4>
         <ul>
-        <li>No es el plan de ronda completo (eso es
-        <code>F-PSEA-05</code>); es un insumo estructurado.</li>
-        <li>No contiene datos reportados por participantes (eso es
-        <code>F-PSEA-08</code>).</li>
-        <li>No contiene anexos tecnicos de equipos (eso es
+        <li>No es la ficha basica de ronda (eso es
+        <code>F-PSEA-05</code>).</li>
+        <li>No es el registro que diligencia el participante (eso es
+        <code>F-PSEA-03</code>).</li>
+        <li>No es el anexo tecnico de equipos exportado (eso es
         <code>F-PSEA-04</code>).</li>
-        <li>No es un instructivo de uso del aplicativo.</li>
+        <li>No contiene resultados de aptitud (eso es
+        <code>F-PSEA-13</code>).</li>
         </ul>
         <h4 id="riesgos-de-interpretacion">Riesgos de
         interpretacion</h4>
         <ul>
         <li><strong>Confundir con F-PSEA-05:</strong>
-        <code>F-PSEA-06</code> es la ficha digital generada por el
-        aplicativo; <code>F-PSEA-05</code> es el plan de ronda
-        consolidado que la integra con otros elementos.</li>
-        <li><strong>Omitir puntos A-U:</strong> La ficha debe incluir o
-        referenciar los puntos A-U de ISO/IEC 17043:2023 7.2.1.3.</li>
-        <li><strong>Incluir datos de analisis:</strong> Los datos
-        estadisticos y resultados de aptitud no van en esta ficha; van
-        en <code>F-PSEA-13</code> y <code>F-PSEA-12</code>.</li>
+        <code>F-PSEA-06</code> contiene la planificacion completa;
+        <code>F-PSEA-05</code> solo resume la ronda.</li>
+        <li><strong>Omitir A-U:</strong> Debe incluir o referenciar los
+        puntos A-U de ISO/IEC 17043:2023 7.2.1.3.</li>
+        <li><strong>Planificar sin carga cerrada:</strong> Debe usar
+        <code>F-PSEA-03</code> cerrado y <code>F-PSEA-04</code>
+        exportado antes de aprobar ejecucion.</li>
+        <li><strong>Incluir analisis posterior:</strong> Los datos
+        estadisticos oficiales y resultados de aptitud van en
+        <code>F-PSEA-12</code> y <code>F-PSEA-13</code>.</li>
         </ul>
         <hr />
         <h2 id="criterio-minimo-de-elaboracion">Criterio minimo de
         elaboracion</h2>
-        <p>La ficha digital contiene o referencia: identificacion de
-        ronda, participantes, cronograma, item de ensayo, niveles,
-        puntos A-U, y se exporta desde <code>calaire-app</code> como
-        insumo de <code>F-PSEA-05</code>.</p>
+        <p>La planificacion incluye alcance tecnico, participantes,
+        equipos, recursos criticos, cronograma, matriz A-U, criterios
+        estadisticos pre-ronda y aprobaciones, usando
+        <code>F-PSEA-03</code> y <code>F-PSEA-04</code> como insumos
+        formales.</p>
       </article>
     </main>
     <footer class="footer">

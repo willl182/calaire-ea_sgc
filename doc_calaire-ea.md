@@ -120,7 +120,7 @@ El patrón operativo recomendado es:
 | Momento | Actividad | Resultado esperado | Registro asociado |
 |---|---|---|---|
 | T-14 | Envío de instrucciones y calendario preliminar | Participantes conocen alcance, condiciones, requisitos y plazos. | Comunicaciones controladas, I-PSEA-09 |
-| T-7 | Confirmación de participantes, equipos y personal | Se cierran contactos, equipos, analitos y requisitos de ingreso. | F-PSEA-05, F-PSEA-05A, F-PSEA-07 |
+| T-7 | Confirmación de participantes, equipos y personal | Se cierran contactos, equipos, analitos y requisitos de ingreso. | F-PSEA-03, F-PSEA-04, F-PSEA-06 |
 | T-3 | Verificación documental final | Se revisan documentos, recursos críticos, aplicativos, permisos y cambios. | F-PSEA-06, F-PSEA-04 |
 | T-1 | Confirmación logística | Se validan punto de encuentro, horarios, disponibilidad técnica y canales de soporte. | F-PSEA-06, comunicaciones |
 | Día 0 | Recepción, instalación y acondicionamiento | Equipos instalados, puertos asignados, condiciones iniciales documentadas. | F-PSEA-04, F-PSEA-11 |
@@ -145,22 +145,27 @@ El preprocesamiento debe detectar si un valor fue cargado al participante equivo
 
 ### 5.3 Paquete operativo mínimo por ronda
 
-Cada ronda requiere copias de trabajo de los formatos F-PSEA-05 a F-PSEA-14. Estos formatos no son accesorios administrativos; son la evidencia mínima para demostrar que la ronda fue ejecutada y que sus datos son analizables.
+Cada ronda requiere copias de trabajo de los formatos maestros vigentes. Estos formatos no son accesorios administrativos; son la evidencia mínima para demostrar que la ronda fue planificada, ejecutada, revisada y cerrada con datos analizables. La fuente maestra vive en `01_bloque_general/04_formatos_maestros`; las copias diligenciadas de una ronda viven en `02_despliegue_rondas/<ronda>/` dentro de la etapa correspondiente.
 
 | Formato | Uso operativo |
 |---|---|
-| F-PSEA-05 Confirmación de Participación | Aceptación formal de alcance, analitos y condiciones. |
-| F-PSEA-06 Plan de Ronda EA | Diseño operativo aprobado de la ronda. |
-| F-PSEA-07 Lista Maestra de Participantes | Codificación, contactos y estado de participación. |
-| F-PSEA-08 Registro de Preparación del Ítem | Setpoints, gases, dilución, condiciones y responsables. |
+| F-PSEA-01 Calendario global de ronda | Vista calendario de actividades, hitos, ventanas de medición y fechas críticas. |
+| F-PSEA-02 Cronograma detallado | Secuencia operativa de actividades, responsables, tiempos y dependencias. |
+| F-PSEA-03 Registro de participación | Carga de datos del participante en `calaire-app`: contacto, personal, analitos, equipos, logística y aceptación de condiciones. |
+| F-PSEA-04 Anexo técnico de equipos e instrumentos | Exportación desde F-PSEA-03 con identificación de equipos, instrumentos, certificados, configuración y condiciones técnicas del participante. |
+| F-PSEA-05 Ficha básica de ronda EA | Resumen básico/caratula de la ronda, con identificación, alcance y registros principales asociados. |
+| F-PSEA-06 Planificación de ronda EA | Diseño operativo completo aprobado de la ronda, alcance, analitos, participantes, recursos, responsabilidades, cronograma, matriz A-U y criterios de ejecución. |
+| F-PSEA-07 Preparación y control del ítem | Setpoints, gases, dilución, condiciones, verificaciones y responsables del ítem o condición de ensayo. |
+| F-PSEA-08 Datos reportados por participante | Resultados capturados o reportados por participante antes de exportación oficial. |
 | F-PSEA-09 Datos exportados para análisis | Archivo oficial desde `calaire-app` hacia `pt_app`. |
 | F-PSEA-10 Registro de preprocesamiento | Revisión de estructura, unidades, completitud y plausibilidad. |
 | F-PSEA-11 Homogeneidad y estabilidad | Evidencia técnica de aptitud del ítem o condición. |
+| F-PSEA-11A a F-PSEA-11D Subformatos H/E | Datos preprocesados y resultados específicos de homogeneidad y estabilidad. |
 | F-PSEA-12 Datos oficiales consolidados | Dataset aprobado para evaluación. |
 | F-PSEA-13 Informe final de resultados | Informe emitido, revisado y autorizado. |
 | F-PSEA-14 Registro de queja o NC | Uso bajo demanda si hay desviación, queja o no conformidad. |
 
-Además, F-PSEA-05A debe usarse antes de la ronda para levantar información del participante, equipos, personal autorizado y condiciones de contacto. F-PSEA-15 a F-PSEA-17 se activan si aparecen no conformidades, quejas o apelaciones; F-PSEA-20 soporta validación de software; F-PSEA-21 a F-PSEA-23 cubren competencia, imparcialidad y proveedores críticos.
+Además, F-PSEA-15 se activa si hay apelación; F-PSEA-16 soporta competencia y autorización operativa; F-PSEA-17 soporta evaluación de proveedores críticos; y F-PSEA-18 normaliza comunicaciones formales con participantes. Estos registros se conservan como evidencia de ronda cuando aplican, sin confundirse con la versión maestra controlada.
 
 ### 5.4 Flujo operativo diario
 
@@ -288,7 +293,9 @@ El SGC debe demostrar que el proveedor tiene autoridad definida, personal compet
 
 ### 6.2 Arquitectura documental
 
-La arquitectura documental vigente se organiza en cuatro niveles:
+La arquitectura documental vigente separa el SGC maestro de las evidencias de ejecución. `01_bloque_general` contiene documentos marco, procedimientos, instructivos, formatos maestros, matrices e inventarios. `02_despliegue_rondas` conserva registros y evidencias por ronda, con `checklist_ronda.md` en la raíz de cada ronda y carpetas de etapa para planificación, comunicaciones, preparación del ítem, datos, homogeneidad/estabilidad, análisis e informe, y cierre SGC.
+
+En términos de tipos documentales, la arquitectura se organiza en cuatro niveles:
 
 | Nivel | Contenido | Función |
 |---|---|---|
@@ -352,6 +359,8 @@ El proyecto distingue dos componentes principales:
 
 - `calaire-app`: portal web de gestión operativa de rondas, participantes y captura de datos.
 - `pt_app` + `ptcalc`: motor estadístico para procesamiento de datos, evaluación de aptitud e informes.
+
+El SGC documenta estos componentes mediante `DG-PSEA-02 Aplicativo calaire-app` y `DG-PSEA-03 Aplicativo pt_app`. Ambos documentos marco viven en carpetas propias dentro de `01_bloque_general/01_documentos_marco/`, con Markdown maestro, DOCX, HTML y capturas asociadas. Las capturas son evidencia visual de soporte; no reemplazan procedimientos, instructivos ni validación de software.
 
 ### 7.2 calaire-app
 

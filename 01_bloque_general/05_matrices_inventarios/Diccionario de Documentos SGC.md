@@ -22,7 +22,7 @@ Fuente vigente: `P-PSEA-02 Matriz documental basica del PEA` y `mapa_navegacion_
 | `P-PSEA-01` | Protocolo general EA | Procedimiento marco | Ordena el ensayo de aptitud y referencia el flujo documental. | `DG-PSEA-01`, `P-PSEA-02`, `P-PSEA-04`, `P-PSEA-07`, `P-PSEA-09` |
 | `P-PSEA-02` | Matriz documental del PEA | Matriz | Define arquitectura documental, codificacion, estados y ubicacion maestra. | `P-PSEA-03` |
 | `P-PSEA-03` | Control de registros y evidencias | Procedimiento | Define estructura de ronda, checklist raiz, registros y evidencias por etapa. | `P-PSEA-08`, `F-PSEA-01` a `F-PSEA-18` segun aplique |
-| `P-PSEA-04` | Planificacion de ronda EA | Procedimiento | Planifica rondas con calaire-app, cronograma, plan, ficha digital, competencia y proveedores cuando aplique. | `DG-PSEA-02`, `I-PSEA-03`, `F-PSEA-01`, `F-PSEA-02`, `F-PSEA-04`, `F-PSEA-05`, `F-PSEA-05A`, `F-PSEA-06`, `F-PSEA-16`, `F-PSEA-17` |
+| `P-PSEA-04` | Planificacion de ronda EA | Procedimiento | Planifica rondas con calaire-app, cronograma, ficha basica, planificacion completa, competencia y proveedores cuando aplique. | `DG-PSEA-02`, `I-PSEA-03`, `F-PSEA-01`, `F-PSEA-02`, `F-PSEA-03`, `F-PSEA-04`, `F-PSEA-05`, `F-PSEA-06`, `F-PSEA-16`, `F-PSEA-17` |
 | `P-PSEA-05` | Comunicaciones | Procedimiento | Controla comunicaciones formales del PEA. | `F-PSEA-18`, `F-PSEA-13` |
 | `P-PSEA-06` | Preparacion y control del item | Procedimiento tecnico | Controla generacion, preparacion y control del item gaseoso. | `F-PSEA-07`, `F-PSEA-11`, `P-PSEA-07`, `P-PSEA-10` a `P-PSEA-13` |
 | `P-PSEA-07` | Diseno estadistico | Procedimiento tecnico | Define valor asignado, sigma_pt, incertidumbre, desempeno, H/E y reglas de decision. | `F-PSEA-11`, `F-PSEA-11A` a `F-PSEA-11D`, `F-PSEA-12`, `F-PSEA-13`, `P-PSEA-09` |
@@ -47,11 +47,10 @@ Fuente vigente: `P-PSEA-02 Matriz documental basica del PEA` y `mapa_navegacion_
 | `I-PSEA-05` | Analisis PT pt_app | Instructivo | Ejecuta modulo de analisis PT y genera salidas e informe. | `DG-PSEA-03`, `F-PSEA-11`, `F-PSEA-12`, `F-PSEA-13` |
 | `F-PSEA-01` | Calendario global | Formato maestro | Calendario general exportable desde calaire-app. | `P-PSEA-04`, `F-PSEA-05` |
 | `F-PSEA-02` | Cronograma detallado | Formato maestro | Cronograma detallado de actividades de ronda. | `P-PSEA-04`, `F-PSEA-05` |
-| `F-PSEA-03` | Registro de participacion | Registro | Registro gestionado por calaire-app; maestro pendiente. | `DG-PSEA-02` |
-| `F-PSEA-04` | Equipos e instrumentos | Anexo tecnico | Equipos e instrumentos del participante. | `P-PSEA-08`, `I-PSEA-03`, `DG-PSEA-03` |
-| `F-PSEA-05` | Plan de ronda EA | Formato maestro | Plan tecnico-operativo de ronda. | `P-PSEA-04`, `F-PSEA-01`, `F-PSEA-02`, `F-PSEA-06` |
-| `F-PSEA-05A` | Hoja registro participante | Subformato | Registro derivado del plan/ficha para participante. | `P-PSEA-04`, `F-PSEA-05`, `F-PSEA-06` |
-| `F-PSEA-06` | Ficha digital de ronda | Formato maestro | Exportacion estructurada de calaire-app para planificacion. | `P-PSEA-04`, `F-PSEA-05` |
+| `F-PSEA-03` | Registro de participacion y carga de datos del participante | Registro digital | Registro diligenciado en calaire-app por el participante; fuente para equipos y planificacion. | `DG-PSEA-02`, `I-PSEA-02`, `F-PSEA-04`, `F-PSEA-06` |
+| `F-PSEA-04` | Equipos e instrumentos | Anexo tecnico | Exportacion de equipos e instrumentos desde F-PSEA-03. | `F-PSEA-03`, `P-PSEA-08`, `I-PSEA-03`, `DG-PSEA-03` |
+| `F-PSEA-05` | Ficha basica de ronda EA | Formato maestro | Resumen basico/caratula de ronda. | `P-PSEA-04`, `F-PSEA-06`, `F-PSEA-01`, `F-PSEA-02` |
+| `F-PSEA-06` | Planificacion de ronda EA | Formato maestro | Planificacion completa tecnica, logistica, estadistica y documental de ronda. | `P-PSEA-04`, `F-PSEA-03`, `F-PSEA-04`, `F-PSEA-05`, `F-PSEA-07` |
 | `F-PSEA-07` | Control del item gaseoso | Formato maestro | Evidencia preparacion y control del item. | `P-PSEA-06` |
 | `F-PSEA-08` | Datos reportados | Formato maestro | Datos reportados por participante. | `I-PSEA-02`, `P-PSEA-08`, `F-PSEA-09` |
 | `F-PSEA-09` | Exportacion analisis PT | Formato maestro | Exportacion oficial calaire-app hacia pt_app. | `P-PSEA-08`, `DG-PSEA-03` |

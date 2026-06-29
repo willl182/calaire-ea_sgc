@@ -76,8 +76,9 @@ Toda comunicacion critica debe registrar:
 
 El procedimiento debe enlazar las comunicaciones con los siguientes documentos cuando aplique:
 
-- `F-PSEA-05` Plan de ronda EA;
-- `F-PSEA-05A` Hoja de registro del participante;
+- `F-PSEA-03` Registro de participacion y carga de datos del participante;
+- `F-PSEA-05` Ficha basica de ronda EA;
+- `F-PSEA-06` Planificacion de ronda EA;
 - `F-PSEA-08` Datos reportados por participante;
 - `F-PSEA-09` Datos exportados para analisis PT;
 - `F-PSEA-13` Informe final de resultados;

@@ -96,7 +96,8 @@ Incluye:
 | Registro | Relacion |
 |---|---|
 | `F-PSEA-04` | Provee informacion de equipos e instrumentos del participante. |
-| `F-PSEA-05A` | Identifica participante y datos de registro. |
+| `F-PSEA-03` | Identifica participante y datos de registro cargados en `calaire-app`. |
+| `F-PSEA-04` | Identifica equipos e instrumentos exportados desde la carga del participante. |
 | `F-PSEA-09` | Recibe la exportacion oficial derivada de `F-PSEA-08`. |
 | `F-PSEA-10` | Registra el preprocesamiento posterior en `pt_app`. |
 | `F-PSEA-12` | Dataset oficial consolidado posterior al procesamiento. |

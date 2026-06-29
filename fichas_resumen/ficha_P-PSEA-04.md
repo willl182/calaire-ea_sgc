@@ -55,9 +55,9 @@ La planificacion se ejecuta principalmente en `calaire-app`.
 | `F-PSEA-01` | Calendario global de ronda | Insumo |
 | `F-PSEA-02` | Cronograma detallado de ronda | Insumo |
 | `F-PSEA-04` | Anexo tecnico de equipos e instrumentos | Insumo |
-| `F-PSEA-05` | Plan de ronda EA | Producto |
-| `F-PSEA-05A` | Hoja de registro del participante | Insumo / Producto |
-| `F-PSEA-06` | Ficha digital de ronda | Insumo / Producto |
+| `F-PSEA-03` | Registro de participacion y carga de datos del participante | Insumo / Producto |
+| `F-PSEA-05` | Ficha basica de ronda EA | Producto |
+| `F-PSEA-06` | Planificacion de ronda EA | Insumo / Producto |
 | `F-PSEA-16` | Matriz de competencia y autorizacion | Referencia / evidencia de planificacion |
 | `F-PSEA-17` | Evaluacion de proveedores criticos | Referencia / evidencia de planificacion |
 | `F-PSEA-07` | Preparacion y control del item | Referencia |
@@ -68,8 +68,8 @@ La planificacion se ejecuta principalmente en `calaire-app`.
 | Codigo / destino | Descripcion | Rol en el flujo |
 |---|---|---|
 | `F-PSEA-05` | Plan de ronda consolidado | Producto |
-| `F-PSEA-05A` | Hoja de registro del participante diligenciada, si aplica | Registro |
-| `F-PSEA-06` | Ficha digital de ronda | Producto |
+| `F-PSEA-03` | Registro de participacion diligenciado en `calaire-app` | Registro |
+| `F-PSEA-06` | Planificacion de ronda EA | Producto |
 | `P-PSEA-06` | Preparacion y control del item | Referencia |
 
 ---
@@ -84,8 +84,8 @@ La planificacion se ejecuta principalmente en `calaire-app`.
 | `I-PSEA-03` | Instructivo de administracion de rondas | Obligatorio |
 | `P-PSEA-06` | Preparacion del item que debe planificarse | Obligatorio |
 | `F-PSEA-05` | Plan de ronda que este procedimiento produce | Obligatorio |
-| `F-PSEA-05A` | Hoja de registro del participante asociada al plan | Obligatorio cuando aplique |
-| `F-PSEA-06` | Ficha digital que este procedimiento produce | Obligatorio |
+| `F-PSEA-03` | Registro de participacion asociado a la planificacion | Obligatorio cuando aplique |
+| `F-PSEA-06` | Planificacion completa que este procedimiento produce | Obligatorio |
 | `F-PSEA-16` | Competencia y autorizacion requerida para ejecutar la ronda | Condicional |
 | `F-PSEA-17` | Proveedores criticos requeridos para ejecutar la ronda | Condicional |
 | `P-PSEA-14` | Colusion y falsificacion (medidas preventivas en plan) | Referencia |

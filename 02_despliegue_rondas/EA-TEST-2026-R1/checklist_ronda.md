@@ -3,10 +3,10 @@
 ## 01_planificacion_ronda
 - [ ] F-PSEA-01 - Calendario global de ronda
 - [ ] F-PSEA-02 - Cronograma detallado de ronda
-- [ ] F-PSEA-04 - Anexo tecnico de equipos e instrumentos
-- [ ] F-PSEA-05 - Plan de ronda EA
-- [ ] F-PSEA-05A - Hoja de registro del participante
-- [ ] F-PSEA-06 - Ficha digital de ronda EA
+- [ ] F-PSEA-03 - Registro de participacion y carga de datos del participante
+- [ ] F-PSEA-04 - Equipos e instrumentos exportados desde F-PSEA-03
+- [ ] F-PSEA-05 - Ficha basica de ronda EA
+- [ ] F-PSEA-06 - Planificacion de ronda EA
 - [ ] F-PSEA-16 - Matriz de competencia y autorizacion
 - [ ] F-PSEA-17 - Evaluacion de proveedores criticos, si aplica
 

@@ -17,7 +17,7 @@
 
 ### Proposito operativo
 
-Registra los equipos e instrumentos utilizados por cada laboratorio participante en una ronda de ensayo de aptitud. Es equivalente al archivo `ronda_1_equipos.csv` y alimenta al modulo de analisis de `pt_app` para contextualizar los resultados de cada participante.
+Exporta desde `F-PSEA-03` / `calaire-app` los equipos e instrumentos declarados por cada laboratorio participante en una ronda de ensayo de aptitud. Es equivalente al archivo `ronda_1_equipos.csv` cuando se genera como CSV y alimenta al modulo de analisis de `pt_app`.
 
 ### Rol en el flujo
 
@@ -53,14 +53,14 @@ Se captura en `calaire-app` y se consume en `pt_app`.
 
 | Codigo / fuente | Descripcion | Rol en el flujo |
 |---|---|---|
-| `calaire-app` | Registro de equipos por participante | Origen |
-| `F-PSEA-03` | Registro de participacion | Referencia |
+| `F-PSEA-03` / `calaire-app` | Registro cargado por el participante con equipos declarados | Origen |
 
 #### Salidas principales
 
 | Codigo / destino | Descripcion | Rol en el flujo |
 |---|---|---|
 | `pt_app` | Datos de equipos para analisis | Entrada |
+| `F-PSEA-06` | Planificacion completa que valida recursos y compatibilidad | Referencia |
 | `F-PSEA-12` | Dataset consolidado (incluye equipos) | Referencia |
 
 ---
@@ -72,7 +72,8 @@ Se captura en `calaire-app` y se consume en `pt_app`.
 | Codigo | Relacion | Tipo de vinculo |
 |---|---|---|
 | `F-PSEA-03` | Registro de participacion al que pertenece | Obligatorio |
-| `F-PSEA-09` | Datos exportados que incluyen equipos | Obligatorio |
+| `F-PSEA-06` | Planificacion completa de ronda que usa el anexo tecnico | Obligatorio |
+| `F-PSEA-09` | Datos exportados para analisis PT, asociados a equipos | Obligatorio |
 | `F-PSEA-12` | Dataset consolidado que incluye equipos | Obligatorio |
 | `DG-PSEA-02` | Aplicativo de captura | Obligatorio |
 | `DG-PSEA-03` | Aplicativo de consumo | Obligatorio |

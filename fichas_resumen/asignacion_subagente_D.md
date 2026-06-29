@@ -50,7 +50,7 @@ Fichar los registros y formatos operativos activos que soportan planificacion, p
 
 ### Item y ronda
 
-#### `F-PSEA-05` — Plan de ronda EA
+#### `F-PSEA-05` — Ficha basica de ronda EA
 - **Tipo:** Formato / Registro
 - **Clase:** Ficha activa
 - **Prioridad:** Media-alta

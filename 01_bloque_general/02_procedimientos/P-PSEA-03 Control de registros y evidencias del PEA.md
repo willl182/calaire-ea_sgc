@@ -83,11 +83,10 @@ El script `crear_estructura_ronda.sh` y la plantilla `plantilla_checklist_ronda.
 |---|---|---|---|---|---|---|
 | `F-PSEA-01` | Calendario global de ronda | `calaire-app` / planificacion | Apertura y planificacion | Coordinacion del PEA | Soporte administrativo | `P-PSEA-04`, `F-PSEA-05` |
 | `F-PSEA-02` | Cronograma detallado de ronda | `calaire-app` / formato maestro | Planificacion detallada | Coordinacion del PEA | Soporte administrativo / evidencia de planificacion | `P-PSEA-04`, `F-PSEA-05` |
-| `F-PSEA-03` | Registro de participacion | `calaire-app` | Inscripcion, confirmacion y cierre de participacion | Coordinacion del PEA | Registro oficial | `P-PSEA-04`, `P-PSEA-05`, `F-PSEA-09` |
-| `F-PSEA-04` | Equipos e instrumentos | Participante / `calaire-app` | Inscripcion tecnica y preparacion de analisis | Participante / Responsable tecnico | Evidencia tecnica | `F-PSEA-03`, `F-PSEA-09`, `P-PSEA-08` |
-| `F-PSEA-05` | Plan de ronda EA | Coordinacion del PEA | Antes de ejecucion | Coordinacion del PEA | Registro oficial de planificacion | `P-PSEA-04`, `F-PSEA-01`, `F-PSEA-02` |
-| `F-PSEA-05A` | Hoja de registro del participante | Participante / anexo operativo | Durante registro o ejecucion | Participante / Coordinacion | Registro auxiliar | `F-PSEA-05`, `F-PSEA-07` |
-| `F-PSEA-06` | Ficha digital de ronda EA | `calaire-app` | Apertura y actualizacion de ronda | Coordinacion / Responsable aplicativo | Registro digital estructurado | `P-PSEA-04`, `DG-PSEA-02` |
+| `F-PSEA-03` | Registro de participacion y carga de datos del participante | `calaire-app` | Inscripcion, confirmacion, carga de datos, equipos y cierre de participacion | Participante / Coordinacion del PEA | Registro oficial | `P-PSEA-04`, `P-PSEA-05`, `F-PSEA-04`, `F-PSEA-06` |
+| `F-PSEA-04` | Equipos e instrumentos | Exportacion desde `F-PSEA-03` / `calaire-app` | Inscripcion tecnica y preparacion de analisis | Responsable tecnico | Evidencia tecnica | `F-PSEA-03`, `F-PSEA-06`, `F-PSEA-09`, `P-PSEA-08` |
+| `F-PSEA-05` | Ficha basica de ronda EA | Coordinacion del PEA / `calaire-app` | Apertura y control resumido de la ronda | Coordinacion del PEA | Ficha resumen de ronda | `P-PSEA-04`, `F-PSEA-06`, `F-PSEA-01`, `F-PSEA-02` |
+| `F-PSEA-06` | Planificacion de ronda EA | Coordinacion del PEA / `calaire-app` | Antes de ejecucion | Coordinacion del PEA | Registro oficial de planificacion completa | `P-PSEA-04`, `F-PSEA-03`, `F-PSEA-04`, `F-PSEA-07` |
 | `F-PSEA-07` | Preparacion y control del item | Responsable tecnico | Preparacion y control del item gaseoso | Responsable tecnico | Evidencia tecnica | `P-PSEA-06`, `P-PSEA-07` |
 | `F-PSEA-08` | Datos reportados por participante | Participante / `calaire-app` | Reporte de resultados por participante | Participante | Registro oficial de datos reportados | `I-PSEA-02`, `P-PSEA-08` |
 | `F-PSEA-09` | Datos de participantes exportados para analisis PT | `calaire-app` | Transferencia a `pt_app` | Responsable de datos | Anexo digital trazable | `I-PSEA-03`, `P-PSEA-08` |
@@ -117,7 +116,7 @@ El archivo `checklist_ronda.md` es el unico archivo previsto en la raiz de la ro
 Antes de cerrar una ronda se debe confirmar que:
 
 - El cronograma detallado (`F-PSEA-02`) refleja actividades, responsables, fechas y dependencias relevantes.
-- El registro de participacion (`F-PSEA-03`) incluye inscripcion, confirmacion, datos de contacto, estado de participacion y resultado final de cada laboratorio.
+- El registro de participacion (`F-PSEA-03`) incluye la carga de datos del participante en `calaire-app`, su estado de participacion, datos de contacto, personal autorizado, equipos declarados y aceptacion de condiciones.
 - Las exportaciones desde `calaire-app` estan vinculadas con los registros de participantes, equipos y datos reportados.
 - El registro de preprocesamiento (`F-PSEA-10`) identifica entradas, salidas, fecha, version de herramienta y responsable.
 - Los registros H/E (`F-PSEA-11`, `F-PSEA-11A-D`) quedan asociados con el item de ensayo, los datos procesados y los resultados aplicables.

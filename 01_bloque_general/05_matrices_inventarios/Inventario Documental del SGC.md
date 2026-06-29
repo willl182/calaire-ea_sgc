@@ -1,6 +1,6 @@
 # Inventario Documental del SGC - CALAIRE-EA
 
-Actualizado: 2026-06-27  
+Actualizado: 2026-06-28  
 Fuente vigente: `P-PSEA-02 Matriz documental basica del PEA` y `mapa_navegacion_sgc_pea.html`.
 
 ## Criterio de vigencia
@@ -25,8 +25,8 @@ Este inventario usa la taxonomia vigente del SGC del PEA. Cuando exista conflict
 | Codigo | Nombre vigente | Estado | Ubicacion / control |
 |---|---|---|---|
 | `DG-PSEA-01` | Protocolo general de participacion EA | Mantener / revisar al cierre | `01_bloque_general/01_documentos_marco/` |
-| `DG-PSEA-02` | Aplicativo calaire-app | Elaborado / actualizar | `01_bloque_general/01_documentos_marco/DG-PSEA-02 Aplicativo calaire-app.md` |
-| `DG-PSEA-03` | Aplicativo pt_app | Elaborado | `01_bloque_general/01_documentos_marco/DG-PSEA-03 Aplicativo pt_app.md` |
+| `DG-PSEA-02` | Aplicativo calaire-app | Elaborado | `01_bloque_general/01_documentos_marco/DG-PSEA-02 Aplicativo calaire-app/DG-PSEA-02 Aplicativo calaire-app.md` |
+| `DG-PSEA-03` | Aplicativo pt_app | Elaborado | `01_bloque_general/01_documentos_marco/DG-PSEA-03 Aplicativo pt_app/DG-PSEA-03 Aplicativo pt_app.md` |
 
 ## Procedimientos
 
@@ -70,11 +70,10 @@ Este inventario usa la taxonomia vigente del SGC del PEA. Cuando exista conflict
 |---|---|---|---|
 | `F-PSEA-01` | Calendario global de ronda | Activo | `01_bloque_general/04_formatos_maestros/F-PSEA-01 Calendario Tipo_v0.xlsx` |
 | `F-PSEA-02` | Cronograma detallado de ronda | Activo | `01_bloque_general/04_formatos_maestros/F-PSEA-02 Cronograma Detallado_v0.xlsx` |
-| `F-PSEA-03` | Registro de participacion | Activo por ficha / maestro pendiente | `calaire-app` / pendiente de materializacion documental |
+| `F-PSEA-03` | Registro de participacion y carga de datos del participante | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-03 Registro de participacion.md` |
 | `F-PSEA-04` | Equipos e instrumentos | Implementado | `01_bloque_general/04_formatos_maestros/F-PSEA-04 Anexo tecnico de equipos e instrumentos.md` |
-| `F-PSEA-05` | Plan de ronda EA | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-05 Plan de ronda EA.md` |
-| `F-PSEA-05A` | Hoja de registro del participante | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-05A Hoja de registro del participante.md` |
-| `F-PSEA-06` | Ficha digital de ronda EA | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-06 Ficha digital de ronda EA.md` |
+| `F-PSEA-05` | Ficha basica de ronda EA | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-05 Ficha basica de ronda EA.md` |
+| `F-PSEA-06` | Planificacion de ronda EA | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-06 Planificacion de ronda EA.md` |
 | `F-PSEA-07` | Preparacion y control del item | Implementado | `01_bloque_general/04_formatos_maestros/F-PSEA-07 Preparacion y control del item.md` |
 | `F-PSEA-08` | Datos reportados por participante | Implementado | `01_bloque_general/04_formatos_maestros/F-PSEA-08 Datos reportados por participante.md` |
 | `F-PSEA-09` | Datos de participantes exportados para analisis PT | Implementado | `01_bloque_general/04_formatos_maestros/F-PSEA-09 Datos de participantes exportados para analisis PT.md` |

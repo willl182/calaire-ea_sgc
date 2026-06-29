@@ -59,7 +59,7 @@ Diligenciable y exportable desde `calaire-app`.
 
 | Codigo / destino | Descripcion | Rol en el flujo |
 |---|---|---|
-| `F-PSEA-05` | Plan de ronda EA | Entrada |
+| `F-PSEA-06` | Planificacion de ronda EA | Entrada |
 
 ---
 

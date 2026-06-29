@@ -35,8 +35,8 @@ Los formatos maestros viven en `01_bloque_general/04_formatos_maestros/`. Las co
 | Codigo | Nombre operativo | Familia | Tipo | Estado documental | Ubicacion maestra / control |
 |---|---|---|---|---|---|
 | `DG-PSEA-01` | Protocolo general de participacion EA | DG | Documento general | Mantener / revisar al cierre | `01_bloque_general/01_documentos_marco/` |
-| `DG-PSEA-02` | Aplicativo calaire-app | DG | Documento general | Elaborado | `01_bloque_general/01_documentos_marco/DG-PSEA-02 Aplicativo calaire-app.md` |
-| `DG-PSEA-03` | Aplicativo pt_app | DG | Documento general | Elaborado | `01_bloque_general/01_documentos_marco/DG-PSEA-03 Aplicativo pt_app.md` |
+| `DG-PSEA-02` | Aplicativo calaire-app | DG | Documento general | Elaborado | `01_bloque_general/01_documentos_marco/DG-PSEA-02 Aplicativo calaire-app/DG-PSEA-02 Aplicativo calaire-app.md` |
+| `DG-PSEA-03` | Aplicativo pt_app | DG | Documento general | Elaborado | `01_bloque_general/01_documentos_marco/DG-PSEA-03 Aplicativo pt_app/DG-PSEA-03 Aplicativo pt_app.md` |
 | `P-PSEA-01` | Protocolo general EA | P | Procedimiento marco | Mantener / revisar al cierre | `01_bloque_general/02_procedimientos/P-PSEA-01 Protocolo general EA.md` |
 | `P-PSEA-02` | Matriz documental basica del PEA | P | Matriz | Elaborado | `01_bloque_general/02_procedimientos/P-PSEA-02 Matriz documental basica del PEA.md` |
 | `P-PSEA-03` | Control de registros y evidencias del PEA | P | Procedimiento con matrices anexas | Elaborado | `01_bloque_general/02_procedimientos/P-PSEA-03 Control de registros y evidencias del PEA.md` |
@@ -65,11 +65,10 @@ Los formatos maestros viven en `01_bloque_general/04_formatos_maestros/`. Las co
 | `I-PSEA-05` | Instructivo modulo analisis pt_app | I | Instructivo | Elaborado | `01_bloque_general/03_instructivos/I-PSEA-05 Instructivo modulo analisis pt_app.md` |
 | `F-PSEA-01` | Calendario global de ronda | F | Formato maestro | Activo | `01_bloque_general/04_formatos_maestros/F-PSEA-01 Calendario Tipo_v0.xlsx` |
 | `F-PSEA-02` | Cronograma detallado de ronda | F | Formato maestro / evidencia por ronda | Activo | `01_bloque_general/04_formatos_maestros/F-PSEA-02 Cronograma Detallado_v0.xlsx` |
-| `F-PSEA-03` | Registro de participacion | F | Registro | Activo por ficha; maestro pendiente | `calaire-app` / pendiente de materializacion documental |
-| `F-PSEA-04` | Equipos e instrumentos | F | Formato / anexo tecnico | Activo por mapa; maestro pendiente | `01_bloque_general/04_formatos_maestros/` |
-| `F-PSEA-05` | Plan de ronda EA | F | Formato maestro | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-05 Plan de ronda EA.md` |
-| `F-PSEA-05A` | Hoja de registro del participante | F | Subformato derivado | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-05A Hoja de registro del participante.md` |
-| `F-PSEA-06` | Ficha digital de ronda EA | F | Formato maestro | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-06 Ficha digital de ronda EA.md` |
+| `F-PSEA-03` | Registro de participacion y carga de datos del participante | F | Registro digital / formato maestro | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-03 Registro de participacion.md` |
+| `F-PSEA-04` | Equipos e instrumentos | F | Formato / anexo tecnico exportado | Implementado | `01_bloque_general/04_formatos_maestros/F-PSEA-04 Anexo tecnico de equipos e instrumentos.md` |
+| `F-PSEA-05` | Ficha basica de ronda EA | F | Formato maestro | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-05 Ficha basica de ronda EA.md` |
+| `F-PSEA-06` | Planificacion de ronda EA | F | Formato maestro | Elaborado | `01_bloque_general/04_formatos_maestros/F-PSEA-06 Planificacion de ronda EA.md` |
 | `F-PSEA-07` | Preparacion y control del item | F | Formato maestro / registro de ronda diligenciado | Activo operativo | Maestro: `01_bloque_general/04_formatos_maestros/F-PSEA-07 Preparacion y control del item.md`; copias diligenciadas: `02_despliegue_rondas/<ronda>/03_preparacion_item/` |
 | `F-PSEA-08` | Datos reportados por participante | F | Formato maestro / registro de ronda diligenciado | Activo operativo | Maestro: `01_bloque_general/04_formatos_maestros/F-PSEA-08 Datos reportados por participante.md`; copias diligenciadas: `02_despliegue_rondas/<ronda>/04_datos_y_preprocesamiento/` |
 | `F-PSEA-09` | Datos de participantes exportados para analisis PT | F | Formato maestro / exportacion de ronda | Activo operativo | Maestro: `01_bloque_general/04_formatos_maestros/F-PSEA-09 Datos de participantes exportados para analisis PT.md`; exportaciones: `02_despliegue_rondas/<ronda>/04_datos_y_preprocesamiento/` |

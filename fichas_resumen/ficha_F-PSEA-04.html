@@ -101,11 +101,12 @@ Actualizar</span>
         <hr />
         <h2 id="proposito-y-rol">Proposito y rol</h2>
         <h3 id="proposito-operativo">Proposito operativo</h3>
-        <p>Registra los equipos e instrumentos utilizados por cada
-        laboratorio participante en una ronda de ensayo de aptitud. Es
-        equivalente al archivo <code>ronda_1_equipos.csv</code> y
-        alimenta al modulo de analisis de <code>pt_app</code> para
-        contextualizar los resultados de cada participante.</p>
+        <p>Exporta desde <code>F-PSEA-03</code> /
+        <code>calaire-app</code> los equipos e instrumentos declarados
+        por cada laboratorio participante en una ronda de ensayo de
+        aptitud. Es equivalente al archivo
+        <code>ronda_1_equipos.csv</code> cuando se genera como CSV y
+        alimenta al modulo de analisis de <code>pt_app</code>.</p>
         <h3 id="rol-en-el-flujo">Rol en el flujo</h3>
         <ul class="task-list">
         <li><label><input type="checkbox" checked="" />Registro
@@ -150,14 +151,10 @@ Actualizar</span>
         </thead>
         <tbody>
         <tr>
-        <td><code>calaire-app</code></td>
-        <td>Registro de equipos por participante</td>
+        <td><code>F-PSEA-03</code> / <code>calaire-app</code></td>
+        <td>Registro cargado por el participante con equipos
+        declarados</td>
         <td>Origen</td>
-        </tr>
-        <tr>
-        <td><code>F-PSEA-03</code></td>
-        <td>Registro de participacion</td>
-        <td>Referencia</td>
         </tr>
         </tbody>
         </table>
@@ -175,6 +172,12 @@ Actualizar</span>
         <td><code>pt_app</code></td>
         <td>Datos de equipos para analisis</td>
         <td>Entrada</td>
+        </tr>
+        <tr>
+        <td><code>F-PSEA-06</code></td>
+        <td>Planificacion completa que valida recursos y
+        compatibilidad</td>
+        <td>Referencia</td>
         </tr>
         <tr>
         <td><code>F-PSEA-12</code></td>
@@ -201,8 +204,14 @@ Actualizar</span>
         <td>Obligatorio</td>
         </tr>
         <tr>
+        <td><code>F-PSEA-06</code></td>
+        <td>Planificacion completa de ronda que usa el anexo
+        tecnico</td>
+        <td>Obligatorio</td>
+        </tr>
+        <tr>
         <td><code>F-PSEA-09</code></td>
-        <td>Datos exportados que incluyen equipos</td>
+        <td>Datos exportados para analisis PT, asociados a equipos</td>
         <td>Obligatorio</td>
         </tr>
         <tr>

@@ -60,7 +60,8 @@ Describe el uso operativo de `calaire-app` desde el rol administrador o coordina
 
 | Codigo / destino | Descripcion | Rol en el flujo |
 |---|---|---|
-| `F-PSEA-06` | Ficha digital de ronda EA | Salida |
+| `F-PSEA-05` | Ficha basica de ronda EA | Salida |
+| `F-PSEA-06` | Planificacion de ronda EA | Salida |
 | `F-PSEA-01` | Calendario global actualizado | Salida |
 | `F-PSEA-02` | Cronograma detallado actualizado | Salida |
 | `F-PSEA-09` | Exportacion de datos de participantes | Salida |

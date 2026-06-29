@@ -8,7 +8,7 @@
 **Oleada:** 1  
 **Prioridad:** 🔴 Crítica  
 **Ejecuta a través de:** I-PSEA-09 (Instrucciones a Participantes)  
-**Alimenta a:** F-PSEA-07 (Lista Maestra de Participantes), F-PSEA-05A (Registro del Participante)
+**Alimenta a:** F-PSEA-03 (Registro de participacion y carga de datos del participante), F-PSEA-04 (Equipos e instrumentos)
 
 ---
 
@@ -85,10 +85,10 @@ No cubre: comunicaciones internas del equipo técnico CALAIRE ni comunicaciones 
 
    | Requisito | Criterio |
    |---|---|
-   | Dispone de analizador(es) para los analitos de la ronda | Declarado en F-PSEA-05A §2 |
-   | Cuenta con certificado de calibración vigente | Declarado en F-PSEA-05A §2 |
-   | Puede trasladar equipos al sitio en las fechas indicadas | Declarado en F-PSEA-05A §4 |
-   | Acepta las condiciones de confidencialidad | Firmado en F-PSEA-05A §5 |
+   | Dispone de analizador(es) para los analitos de la ronda | Declarado en F-PSEA-03 / exportado en F-PSEA-04 |
+   | Cuenta con certificado de calibración vigente | Declarado en F-PSEA-03 / exportado en F-PSEA-04 |
+   | Puede trasladar equipos al sitio en las fechas indicadas | Declarado en F-PSEA-03 |
+   | Acepta las condiciones de confidencialidad | Confirmado en F-PSEA-03 |
 
 3. Si el laboratorio cumple los requisitos → registrar en F-PSEA-07 (estado: "Invitado / Confirmado").
 4. Si no cumple algún requisito → notificar por escrito las razones y ofrecer participación en ronda futura si aplica.
@@ -98,15 +98,15 @@ No cubre: comunicaciones internas del equipo técnico CALAIRE ni comunicaciones 
 
 ### 6.2 Acuerdos de participación
 
-> **Instrucción:** Describir el mecanismo de acuerdo. Para la prueba piloto puede ser la firma del F-PSEA-05A §5 (declaraciones). Para operación regular, puede requerir un acuerdo formal separado.
+> **Instrucción:** Describir el mecanismo de acuerdo. Para la prueba piloto puede ser la aceptación registrada en F-PSEA-03. Para operación regular, puede requerir un acuerdo formal separado.
 
-1. El acuerdo de participación queda formalizado con la devolución firmada del **F-PSEA-05A §5** (Declaraciones).
+1. El acuerdo de participación queda formalizado con la aceptación registrada en **F-PSEA-03**.
 2. El acuerdo cubre:
    - Condiciones de participación (protocolo DG-PSEA-01)
    - Política de confidencialidad y anonimato de resultados
    - Disponibilidad de equipos en las fechas indicadas
    - Veracidad de los datos declarados
-3. Archivar el F-PSEA-05A firmado como evidencia del acuerdo en el expediente de la ronda.
+3. Archivar o exportar el F-PSEA-03 como evidencia del acuerdo en el expediente de la ronda.
 4. **[Para operación regular:]** Evaluar si se requiere un acuerdo contractual formal (Nota: ISO 17043 §7.1 lo requiere cuando el participante asume compromisos económicos o exige confidencialidad específica).
 
 ---
@@ -118,8 +118,8 @@ No cubre: comunicaciones internas del equipo técnico CALAIRE ni comunicaciones 
 | Comunicación | Contenido | Plazo | Aprueba | Instrumento |
 |---|---|---|---|---|
 | **1ª comunicación** — Invitación | Descripción del esquema, analitos, fechas tentativas, condiciones generales | T-30 días | Director del Proyecto | Carta / correo formal |
-| **2ª comunicación** — Instrucciones pre-ronda | Contenido completo §7.3.5 + F-PSEA-05A adjunto | T-14 días | Coordinador EA + Responsable SGC | `comunicacion_2_participantes.md` personalizada |
-| **Recordatorio** — Confirmación | Verificación de F-PSEA-05A; recordar fecha límite | T-7 días | Coordinador EA | Correo breve |
+| **2ª comunicación** — Instrucciones pre-ronda | Contenido completo §7.3.5 + solicitud de actualización de F-PSEA-03 en `calaire-app` | T-14 días | Coordinador EA + Responsable SGC | `comunicacion_2_participantes.md` personalizada |
+| **Recordatorio** — Confirmación | Verificación de F-PSEA-03; recordar fecha límite | T-7 días | Coordinador EA | Correo breve |
 | **Confirmación logística** | Punto de encuentro, horario, contacto del día | T-1 día | Coordinador EA | Correo breve |
 | **Comunicación de resultados** | Informe individual de desempeño (confidencial) | ≤ 45 días post-ronda | Director del Proyecto | Informe formal |
 
@@ -186,7 +186,7 @@ Registros: F-PSEA-16 (Quejas), F-PSEA-17 (Apelaciones).
 |---|---|---|
 | Trazabilidad completa | Toda comunicación oficial archivada y registrada en F-PSEA-07 | ✅ / ❌ |
 | Plazo 2ª comunicación | Enviada ≥ T-14 días | ✅ / ❌ |
-| Acuerdos firmados | F-PSEA-05A §5 recibido de todos los participantes antes de T-7 días | ✅ / ❌ |
+| Acuerdos registrados | F-PSEA-03 completo y aceptado por todos los participantes antes de T-7 días | ✅ / ❌ |
 | Canal oficial usado | Ninguna comunicación oficial enviada por canal no registrado | ✅ / ❌ |
 | Brechas resueltas | Los 3 ítems ⚠️ de I-PSEA-09 §6.3 resueltos antes del envío | ✅ / ❌ |
 
@@ -197,7 +197,7 @@ Registros: F-PSEA-16 (Quejas), F-PSEA-17 (Apelaciones).
 | Formato / Archivo | Descripción | Cuándo |
 |---|---|---|
 | F-PSEA-07 | Lista Maestra — columnas: solicitud, acuerdo, comunicaciones, seguimiento | Actualizar en cada evento de comunicación |
-| F-PSEA-05A firmado | Evidencia del acuerdo de participación | Al recibir de cada participante |
+| F-PSEA-03 completo | Evidencia del acuerdo de participación y datos cargados por participante | Al cierre de carga de cada participante |
 | Correos archivados | Evidencia de envío, recepción y fe de erratas | Archivar en carpeta del proyecto por ronda |
 | F-PSEA-16 | Registro de quejas | Si aplica |
 | F-PSEA-17 | Registro de apelaciones | Si aplica |

@@ -61,7 +61,8 @@ El personal autorizado usa calaire-app bajo lo definido en DG-PSEA-02, P-PSEA-04
 |---|---|
 | F-PSEA-01 | Calendario global actualizado. |
 | F-PSEA-02 | Cronograma detallado actualizado. |
-| F-PSEA-06 | Ficha digital de ronda EA. |
+| F-PSEA-05 | Ficha basica de ronda EA. |
+| F-PSEA-06 | Planificacion de ronda EA. |
 | F-PSEA-09 | Exportacion de datos de participantes hacia pt_app. |
 | F-PSEA-14 | Caso SGC de queja o NC, si aplica. |
 
@@ -70,7 +71,7 @@ El personal autorizado usa calaire-app bajo lo definido en DG-PSEA-02, P-PSEA-04
 1. Crear la ronda en calaire-app con su codigo, periodo, analito(s) y niveles.
 2. Configurar el calendario global (F-PSEA-01) y el cronograma detallado (F-PSEA-02).
 3. Registrar o importar los laboratorios participantes y enviar invitaciones.
-4. Generar y controlar la ficha digital de ronda (F-PSEA-06).
+4. Generar y controlar la ficha basica de ronda (F-PSEA-05) y la planificacion completa de ronda (F-PSEA-06).
 5. Enviar comunicaciones operativas segun el cronograma.
 6. Monitorear el registro de datos y equipos por parte de los participantes.
 7. Ejecutar la exportacion oficial de datos (F-PSEA-09) hacia pt_app.
@@ -85,14 +86,14 @@ La administracion de una ronda debe controlar como minimo:
 - Analito(s) y niveles de concentracion.
 - Lista de participantes y estado de confirmacion.
 - Version del calendario global y cronograma detallado.
-- Version de la ficha digital de ronda (F-PSEA-06).
+- Version de la ficha basica (F-PSEA-05) y de la planificacion completa de ronda (F-PSEA-06).
 - Identificador de la exportacion oficial hacia pt_app (F-PSEA-09).
 - Registro de casos SGC, si aplica.
 
 ## 8. Controles
 
 - Los cambios en calendario o cronograma deben estar justificados y comunicados.
-- La ficha digital de ronda (F-PSEA-06) debe reflejar lo definido en P-PSEA-04.
+- La planificacion de ronda (F-PSEA-06) debe reflejar lo definido en P-PSEA-04; la ficha basica (F-PSEA-05) resume esa planificacion.
 - La exportacion hacia pt_app debe ser la version oficial y conservarse como F-PSEA-09.
 - Los casos SGC de queja deben alinearse con P-PSEA-17 y escalar a P-PSEA-16 cuando deriven en NC/CAPA.
 - El acceso administrativo debe estar restringido a roles autorizados.
@@ -106,7 +107,8 @@ La administracion de una ronda debe controlar como minimo:
 | P-PSEA-05 | Procedimiento de comunicaciones operativas. |
 | P-PSEA-08 | Flujo tecnico que recibe exportaciones. |
 | P-PSEA-17 | Procedimiento de quejas gestionadas como casos SGC. |
-| F-PSEA-06 | Ficha digital de ronda generada en calaire-app. |
+| F-PSEA-05 | Ficha basica de ronda generada o actualizada en calaire-app. |
+| F-PSEA-06 | Planificacion completa de ronda generada o consolidada desde calaire-app. |
 | I-PSEA-02 | Instructivo de uso del participante. |
 
 ## 10. Limites

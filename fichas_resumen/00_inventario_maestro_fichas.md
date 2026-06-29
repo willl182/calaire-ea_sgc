@@ -72,9 +72,8 @@
 | `F-PSEA-13` | Informe final de resultados | F | Mantener / actualizar | Media-alta | Ficha preliminar | Fase 6 | Generado desde `pt_app`; no definir contenido ahora. |
 | `F-PSEA-03` | Registro de participacion | F | Mantener / actualizar | Media | Ficha activa | Fase 6 | Principal registro de participacion. |
 | `F-PSEA-04` | Anexo tecnico de equipos e instrumentos | F | Mantener / actualizar | Media | Ficha activa | Fase 6 | Equivalente a `ronda_1_equipos.csv`; alimenta `pt_app`. |
-| `F-PSEA-05` | Plan de ronda EA | F | Mantener / actualizar | Media-alta | Ficha activa | Fase 6 | Integra `F-PSEA-01`, `F-PSEA-02`, `F-PSEA-06` y nota A-U. |
-| `F-PSEA-05A` | Hoja de registro del participante | F | Elaborado | Media | Ficha activa | Fase 6 | Subformato activo del checklist de ronda; asociado a `P-PSEA-04` y `F-PSEA-05`. |
-| `F-PSEA-06` | Ficha digital de ronda EA | F | Elaborar / actualizar | Alta | Ficha activa | Fase 4 | Exportable desde `calaire-app`; insumo de `F-PSEA-05`. |
+| `F-PSEA-05` | Ficha basica de ronda EA | F | Mantener / actualizar | Media | Ficha activa | Fase 6 | Resume identificacion, alcance y registros principales de la ronda. |
+| `F-PSEA-06` | Planificacion de ronda EA | F | Mantener / actualizar | Alta | Ficha activa | Fase 4 | Planificacion completa; usa `F-PSEA-03`, `F-PSEA-04`, `F-PSEA-01`, `F-PSEA-02` y nota A-U. |
 | `F-PSEA-07` | Preparacion y control del item | F | Mantener / actualizar | Media | Ficha activa | Fase 6 | Dossier del item gaseoso. |
 | `F-PSEA-08` | Datos reportados por participante | F | Mantener / actualizar | Media | Ficha activa | Fase 6 | Registro en `calaire-app`. |
 | `F-PSEA-10` | Registro de preprocesamiento de datos | F | Elaborar | Alta | Ficha activa | Fase 4 | No es aplicativo; referencia `preprocesamiento_log.csv`. |
@@ -98,7 +97,7 @@
 
 | Clase | Cantidad | Codigos |
 |---|---|---|
-| Ficha activa | 47 | `DG-PSEA-02`, `DG-PSEA-03`, procedimientos activos del mapa, `I-PSEA-02` a `I-PSEA-05`, `F-PSEA-01` a `F-PSEA-18` vigentes incluyendo `F-PSEA-05A` y `F-PSEA-11A` a `F-PSEA-11D` |
+| Ficha activa | 46 | `DG-PSEA-02`, `DG-PSEA-03`, procedimientos activos del mapa, `I-PSEA-02` a `I-PSEA-05`, `F-PSEA-01` a `F-PSEA-18` vigentes excluyendo `F-PSEA-05A` e incluyendo `F-PSEA-11A` a `F-PSEA-11D` |
 | Ficha preliminar | 3 | `P-PSEA-09`, `P-PSEA-22`, `P-PSEA-23` |
 | Ficha diferida | 2 | `DG-PSEA-01`, `P-PSEA-01` |
 | Registro de no activo | 7 | `P-PSEA-11`, `P-PSEA-17`, `P-PSEA-18`, `P-PSEA-19`, `P-PSEA-22`, `F-PSEA-03`, `F-PSEA-11` |
